@@ -1,0 +1,8 @@
+2021-04-06 14:05:32 [main] INFO  c.h.m.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on Bes-MacBook-Pro.local with PID 23814 (/Users/edgeit1/Documents/open/microservices/twitter-to-kafka-service/target/classes started by edgeit1 in /Users/edgeit1/Documents/open/microservices)
+2021-04-06 14:05:32 [main] INFO  c.h.m.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-04-06 14:05:33 [main] INFO  c.h.m.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.797 seconds (JVM running for 6.596)
+2021-04-06 14:05:33 [main] INFO  c.h.m.t.t.k.s.TwitterToKafkaServiceApplication - App starts......
+2021-04-06 14:05:33 [main] INFO  c.h.m.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-04-06 14:05:33 [main] INFO  c.h.m.t.t.k.s.TwitterToKafkaServiceApplication - Hello, welcome to microservices
+2021-04-06 14:05:33 [main] INFO  c.h.m.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keyword: [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-04-06 14:05:33 [pool-1-thread-1] INFO  c.h.m.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text: elit magna Fusce Microservices ultricies Maecenas

@@ -1,0 +1,5 @@
+2021-04-01 15:17:41 [main] INFO  c.h.m.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on Bes-MacBook-Pro with PID 40070 (/Users/edgeit1/Documents/open/microservices/twitter-to-kafka-service/target/classes started by edgeit1 in /Users/edgeit1/Documents/open/microservices)
+2021-04-01 15:17:41 [main] INFO  c.h.m.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-04-01 15:17:41 [main] INFO  c.h.m.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.742 seconds (JVM running for 1.592)
+2021-04-01 15:17:41 [main] INFO  c.h.m.t.t.k.s.TwitterToKafkaServiceApplication - App starts
+2021-04-01 15:17:41 [main] INFO  c.h.m.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
