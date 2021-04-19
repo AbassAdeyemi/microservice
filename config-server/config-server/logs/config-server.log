@@ -1,0 +1,42 @@
+2021-04-19 12:12:06 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-04-19 12:12:07 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2021-04-19 12:12:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-04-19 12:12:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrap [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-04-19 12:12:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-04-19 12:12:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-04-19 12:12:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-04-19 12:12:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-04-19 12:12:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-04-19 12:12:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-04-19 12:12:07 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-04-19 12:12:07 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2021-04-19 12:12:07 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2021-04-19 12:12:07 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2021-04-19 12:12:07 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: either 'jasypt.encryptor.password' or one of ['jasypt.encryptor.private-key-string', 'jasypt.encryptor.private-key-location'] must be provided for Password-based or Asymmetric encryption
+	at com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder.build(StringEncryptorBuilder.java:31)
+	at com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor.createDefault(DefaultLazyEncryptor.java:47)
+	at com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor.lambda$null$2(DefaultLazyEncryptor.java:38)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor.lambda$new$3(DefaultLazyEncryptor.java:33)
+	at com.ulisesbocchio.jasyptspringboot.util.Singleton.lambda$new$6(Singleton.java:42)
+	at com.ulisesbocchio.jasyptspringboot.util.Singleton.get(Singleton.java:53)
+	at com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor.decrypt(DefaultLazyEncryptor.java:57)
+	at com.ulisesbocchio.jasyptspringboot.resolver.DefaultPropertyResolver.lambda$resolvePropertyValue$0(DefaultPropertyResolver.java:44)
+	at java.base/java.util.Optional.map(Optional.java:265)
+	at com.ulisesbocchio.jasyptspringboot.resolver.DefaultPropertyResolver.resolvePropertyValue(DefaultPropertyResolver.java:40)
+	at com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver.resolvePropertyValue(DefaultLazyPropertyResolver.java:50)
+	at com.ulisesbocchio.jasyptspringboot.EncryptablePropertySource.getProperty(EncryptablePropertySource.java:20)
+	at com.ulisesbocchio.jasyptspringboot.caching.CachingDelegateEncryptablePropertySource.getProperty(CachingDelegateEncryptablePropertySource.java:41)
+	at com.ulisesbocchio.jasyptspringboot.wrapper.EncryptableMapPropertySourceWrapper.getProperty(EncryptableMapPropertySourceWrapper.java:31)
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.merge(EnvironmentDecryptApplicationInitializer.java:236)
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.merge(EnvironmentDecryptApplicationInitializer.java:207)
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.decrypt(EnvironmentDecryptApplicationInitializer.java:189)
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:124)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener$DelegatingEnvironmentDecryptApplicationInitializer.initialize(BootstrapApplicationListener.java:441)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.hayba.microservices.config.server.ConfigServer.main(ConfigServer.java:12)

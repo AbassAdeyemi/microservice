@@ -6,11 +6,10 @@
         <artifactId>microservices</artifactId>
         <groupId>com.hayba</groupId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>kafka-producer</artifactId>
+    <artifactId>config-server</artifactId>
 
     <dependencies>
         <dependency>
@@ -18,18 +17,17 @@
             <artifactId>app-config-data</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.hayba</groupId>
-            <artifactId>kafka-model</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.confluent</groupId>
-            <artifactId>kafka-avro-serializer</artifactId>
+            <groupId>com.github.ulisesbocchio</groupId>
+            <artifactId>jasypt-spring-boot-starter</artifactId>
         </dependency>
     </dependencies>
-
 
 </project>
