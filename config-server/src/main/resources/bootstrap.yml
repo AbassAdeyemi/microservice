@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/AbassAdeyemi/spring-cloud-config-server-repository
+          default-label: main
+          username: AbassAdeyemi
+          password: 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
+          clone-on-start: true
+    fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: springCloud_Pwd!
