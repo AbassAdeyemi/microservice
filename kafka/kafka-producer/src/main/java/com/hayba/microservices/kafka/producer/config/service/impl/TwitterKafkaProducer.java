@@ -27,14 +27,14 @@ public class TwitterKafkaProducer implements KafkaProducer<Long, TwitterAvroMode
 
     @Override
     public void send(String topicName, Long key, TwitterAvroModel message) {
-        LOG.info("Sending message: {}, to topic: ",message, topicName);
+        LOG.info("Sending message: {}, to topic: ", message, topicName);
         ListenableFuture<SendResult<Long, TwitterAvroModel>> kafkaResultFuture = kafkaTemplate.send(topicName, key, message);
         addCallBack(kafkaResultFuture, topicName, message);
     }
 
     @PreDestroy
     public void close() {
-        if(kafkaTemplate != null){
+        if (kafkaTemplate != null) {
             LOG.info("Closing kafka producer");
             kafkaTemplate.destroy();
         }
