@@ -15,3 +15,4 @@ spring:
     user:
       name: spring_cloud_user
       password: '{cipher}794a21aaeb0a42b6f39636633a7374b63211e0caec9c2bc64dc9fc8d29720f96cbacd122aabe308e139ce45a8a7a56e6'
+
