@@ -8,7 +8,7 @@ spring:
           uri: https://github.com/AbassAdeyemi/spring-cloud-config-server-repository
           default-label: main
           username: AbassAdeyemi
-          password: '{cipher}a371f5b527f9f8b5566d4c0f1129cf3496351d32ec9aa1a75fad00638b8c89beffdd574ba82d35d71427150039195a12166db636d24b5bc330400187842cccb3'
+          password: '{cipher}f4b5cee8a33d623854791ffa37608789709b3b4b02575a45f5a897025fd38fea5fe803e263c731889847d3a5e96db8ed01d2519565999dc25397134b06696870'
           clone-on-start: true
     fail-fast: true
   security:
