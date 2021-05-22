@@ -20,6 +20,8 @@ public class KafkaAdminConfig {
 
   @Bean
   public AdminClient adminClient() {
+    System.out.println(" logging bootstrap servers ");
+    System.out.println(kafkaConfigData.getSchemaRegistryUrl());
     return AdminClient.create(
         Map.of(
             CommonClientConfigs.BOOTSTRAP_SERVERS_CONFIG, kafkaConfigData.getBootstrapServers()));
