@@ -1,13 +1,13 @@
-package com.hayba.microservices.elastic.query;
-
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
-public class ElasticQueryServiceApplicationTests {
-
-    @Test
-    public void contextLoads() {
-
-    }
-}
+//package com.hayba.microservices.elastic.query;
+//
+//import org.junit.jupiter.api.Test;
+//import org.springframework.boot.test.context.SpringBootTest;
+//
+//@SpringBootTest
+//public class ElasticQueryServiceApplicationTests {
+//
+//    @Test
+//    public void contextLoads() {
+//
+//    }
+//}

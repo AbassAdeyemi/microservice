@@ -1,5 +1,6 @@
 package com.hayba.microservices.elastic.query.client.service;
 
+
 import com.hayba.microservices.elastic.model.index.IndexModel;
 
 import java.util.List;

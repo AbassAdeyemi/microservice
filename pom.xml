@@ -43,6 +43,7 @@
         <spring-cloud-dependencies.version>Hoxton.SR9</spring-cloud-dependencies.version>
         <jasypt-spring-boot-starter.version>3.0.3</jasypt-spring-boot-starter.version>
         <elastic.version>7.9.1</elastic.version>
+        <springdoc.version>1.5.0</springdoc.version>
     </properties>
 
     <repositories>
@@ -131,6 +132,11 @@
                 <version>${spring-cloud.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-hateoas</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.github.ulisesbocchio</groupId>
                 <artifactId>jasypt-spring-boot-starter</artifactId>
                 <version>${jasypt-spring-boot-starter.version}</version>
@@ -192,6 +198,11 @@
                 <artifactId>avro</artifactId>
                 <version>${avro.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>${springdoc.version}</version>
+            </dependency>
             <!-- https://mvnrepository.com/artifact/io.confluent/kafka-avro-serializer -->
             <dependency>
                 <groupId>io.confluent</groupId>
@@ -239,6 +250,8 @@
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
                     <release>11</release>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
         </plugins>
