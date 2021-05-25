@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 
 @SpringBootApplication
 @ComponentScan(basePackages = "com.hayba.microservices")
-@RequiredArgsConstructor
 public class ElasticQueryServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(ElasticQueryServiceApplication.class, args);
