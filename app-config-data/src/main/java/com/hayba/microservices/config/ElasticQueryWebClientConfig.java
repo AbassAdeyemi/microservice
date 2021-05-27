@@ -8,6 +8,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ConfigurationProperties(prefix = "elastic-query-web-client")
 public class ElasticQueryWebClientConfig {
+    private WebClient webClient;
+    private Query queryByText;
 
     @Data
     @Configuration
@@ -19,5 +21,12 @@ public class ElasticQueryWebClientConfig {
         private String contentType;
         private String acceptType;
         private String baseUrl;
+    }
+
+    @Data
+    public static class Query {
+        private String method;
+        private String uri;
+        private String accept;
     }
 }

@@ -1,6 +1,7 @@
 package com.hayba.microservices.elastic.query.web.client.config;
 
 import com.hayba.microservices.config.UserConfigData;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -37,11 +38,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         auth
                 .inMemoryAuthentication()
                 .withUser(userConfigData.getUsername())
-                .password(userConfigData.getPassword())
+                .password(passwordEncoder().encode(userConfigData.getPassword()))
                 .roles(userConfigData.getRole());
 
     }
 
+    @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
