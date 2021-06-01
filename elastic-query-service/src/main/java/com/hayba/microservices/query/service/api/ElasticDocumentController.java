@@ -1,8 +1,8 @@
 package com.hayba.microservices.query.service.api;
 
+import com.hayba.microservices.elastic.query.service.common.model.ElasticQueryServiceRequestModel;
+import com.hayba.microservices.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
 import com.hayba.microservices.query.service.business.impl.TwitterElasticQueryService;
-import com.hayba.microservices.query.service.model.ElasticQueryServiceRequestModel;
-import com.hayba.microservices.query.service.model.ElasticQueryServiceResponseModel;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
-import java.util.ArrayList;
 import java.util.List;
 
 //@RequestMapping("/documents")
@@ -47,7 +46,7 @@ public class ElasticDocumentController {
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Success", content = {
                     @Content(mediaType = "application.json",
-                    schema = @Schema(implementation = ElasticQueryServiceResponseModel.class))
+                            schema = @Schema(implementation = ElasticQueryServiceResponseModel.class))
             })
     })
     @GetMapping("/documents/{id}")

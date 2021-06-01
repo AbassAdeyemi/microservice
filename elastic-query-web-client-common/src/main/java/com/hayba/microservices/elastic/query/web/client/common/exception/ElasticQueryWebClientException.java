@@ -1,4 +1,4 @@
-package com.hayba.microservices.elastic.query.web.client.exception;
+package com.hayba.microservices.elastic.query.web.client.common.exception;
 
 public class ElasticQueryWebClientException extends RuntimeException{
     public ElasticQueryWebClientException() {

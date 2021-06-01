@@ -1,6 +1,7 @@
 package com.hayba.microservices.query.service.business;
 
-import com.hayba.microservices.query.service.model.ElasticQueryServiceResponseModel;
+
+import com.hayba.microservices.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
 
 import java.util.List;
 

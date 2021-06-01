@@ -1,4 +1,4 @@
-package com.hayba.microservices.query.service.api.error.handler;
+package com.hayba.microservices.elastic.query.service.common.api.error.handler;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

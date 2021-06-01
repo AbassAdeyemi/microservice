@@ -1,4 +1,4 @@
-package com.hayba.microservices.query.service.model;
+package com.hayba.microservices.elastic.query.service.common.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -2,10 +2,9 @@ package com.hayba.microservices.query.service.business.impl;
 
 import com.hayba.microservices.elastic.model.index.impl.TwitterIndexModel;
 import com.hayba.microservices.elastic.query.client.service.ElasticQueryClient;
+import com.hayba.microservices.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
 import com.hayba.microservices.query.service.assembler.ElasticQueryServiceResponseModelAssembler;
 import com.hayba.microservices.query.service.business.ElasticQueryService;
-import com.hayba.microservices.query.service.model.ElasticQueryServiceResponseModel;
-import com.hayba.microservices.query.service.transformer.ElasticToResponseModelTransformer;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

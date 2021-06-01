@@ -1,7 +1,7 @@
-package com.hayba.microservices.query.service.transformer;
+package com.hayba.microservices.elastic.query.service.common.transformer;
 
 import com.hayba.microservices.elastic.model.index.impl.TwitterIndexModel;
-import com.hayba.microservices.query.service.model.ElasticQueryServiceResponseModel;
+import com.hayba.microservices.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

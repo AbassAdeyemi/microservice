@@ -1,9 +1,9 @@
 package com.hayba.microservices.query.service.assembler;
 
 import com.hayba.microservices.elastic.model.index.impl.TwitterIndexModel;
+import com.hayba.microservices.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
+import com.hayba.microservices.elastic.query.service.common.transformer.ElasticToResponseModelTransformer;
 import com.hayba.microservices.query.service.api.ElasticDocumentController;
-import com.hayba.microservices.query.service.model.ElasticQueryServiceResponseModel;
-import com.hayba.microservices.query.service.transformer.ElasticToResponseModelTransformer;
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
 import org.springframework.stereotype.Component;
 

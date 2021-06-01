@@ -1,6 +1,6 @@
-package com.hayba.microservices.elastic.query.web.client.error.handler;
+package com.hayba.microservices.elastic.query.web.client.common.api.error.handler;
 
-import com.hayba.microservices.elastic.query.web.client.model.ElasticQueryWebClientRequestModel;
+import com.hayba.microservices.elastic.query.web.client.common.model.ElasticQueryWebClientRequestModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
