@@ -49,6 +49,7 @@
         <jasypt-spring-boot-starter.version>3.0.3</jasypt-spring-boot-starter.version>
         <elastic.version>7.9.1</elastic.version>
         <springdoc.version>1.5.0</springdoc.version>
+        <posgresql.version>42.2.16</posgresql.version>
     </properties>
 
     <repositories>
@@ -170,6 +171,15 @@
                 <groupId>org.elasticsearch.client</groupId>
                 <artifactId>elasticsearch-rest-high-level-client</artifactId>
                 <version>${elastic.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.postrgesql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${posgresql.version}</version>
             </dependency>
 
             <dependency>
