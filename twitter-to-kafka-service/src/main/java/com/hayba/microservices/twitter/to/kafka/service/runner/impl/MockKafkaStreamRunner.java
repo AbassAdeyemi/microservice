@@ -84,7 +84,6 @@ public class MockKafkaStreamRunner implements StreamRunner {
     LOG.info("Starting mock filtering twitter streams for keyword: {}", Arrays.toString(keywords));
 
         simulateTwitterStream(keywords, minTweetLength, maxTweetLength, sleepTimeMs);
-        return;
     }
 
     private void simulateTwitterStream(String[] keywords, int minTweetLength, int maxTweetLength, long sleepTimeMs) {

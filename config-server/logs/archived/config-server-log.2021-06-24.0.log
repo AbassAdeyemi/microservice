@@ -1,0 +1,174 @@
+2021-06-24 12:17:04 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-06-24 12:17:07 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2021-06-24 12:17:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-06-24 12:17:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrap [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 12:17:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 12:17:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-06-24 12:17:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-06-24 12:17:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 12:17:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 12:17:07 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 12:17:07 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-06-24 12:17:07 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2021-06-24 12:17:07 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2021-06-24 12:17:09 [main] INFO  c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources
+2021-06-24 12:17:09 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource decrypted [org.springframework.core.env.SystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-06-24 12:17:09 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2021-06-24 12:17:09 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.cloud.bootstrap.BootstrapApplicationListener$ExtendedDefaultPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-06-24 12:17:09 [main] INFO  c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources
+2021-06-24 12:17:09 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource decrypted [org.springframework.core.env.SystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-06-24 12:17:09 [main] INFO  c.h.m.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2021-06-24 12:17:14 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f3fcc2f2-246e-380d-aaf0-274a02e21cba
+2021-06-24 12:17:14 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2021-06-24 12:17:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource decrypted [org.springframework.core.env.SystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-06-24 12:17:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-06-24 12:17:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-06-24 12:17:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-06-24 12:17:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 12:17:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-06-24 12:17:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-06-24 12:17:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 12:17:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 12:17:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 12:17:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 12:17:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2021-06-24 12:17:14 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-06-24 12:17:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-06-24 12:17:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-06-24 12:17:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-24 12:17:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-06-24 12:17:17 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-24 12:17:17 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7312 ms
+2021-06-24 12:17:17 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2021-06-24 12:17:17 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2021-06-24 12:17:19 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-24 12:17:22 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/AbassAdeyemi/spring-cloud-config-server-repository
+2021-06-24 12:17:29 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31e22365, org.springframework.security.web.context.SecurityContextPersistenceFilter@598e5cb8, org.springframework.security.web.header.HeaderWriterFilter@1f4dd016, org.springframework.security.web.csrf.CsrfFilter@4627dfda, org.springframework.security.web.authentication.logout.LogoutFilter@52eca410, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6b86826a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2299f6d7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2ebf524, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7210f559, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@300aa927, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6774f264, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41bdaa81, org.springframework.security.web.session.SessionManagementFilter@1b465fa9, org.springframework.security.web.access.ExceptionTranslationFilter@4cadd4d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@cfacf0]
+2021-06-24 12:17:31 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-24 12:17:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2021-06-24 12:17:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2021-06-24 12:17:32 [main] INFO  c.h.m.config.server.ConfigServer - Started ConfigServer in 32.042 seconds (JVM running for 35.345)
+2021-06-24 12:18:18 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-24 12:18:18 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-24 12:18:18 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 129 ms
+2021-06-24 12:18:19 [http-nio-8888-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [486] milliseconds.
+2021-06-24 12:18:20 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/AbassAdeyemi/spring-cloud-config-server-repository
+2021-06-24 12:18:23 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Starting application on LAPTOP-REMRD8BO with PID 2144 (started by abass in C:\Users\abass\Documents\playground\microservice)
+2021-06-24 12:18:23 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - The following profiles are active: twitter_to_kafka
+2021-06-24 12:18:23 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Started application in 1.232 seconds (JVM running for 86.153)
+2021-06-24 12:18:23 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client-twitter_to_kafka.yml
+2021-06-24 12:18:23 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client.yml
+2021-06-24 12:30:31 [http-nio-8888-exec-9] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/AbassAdeyemi/spring-cloud-config-server-repository
+2021-06-24 12:30:33 [http-nio-8888-exec-9] INFO  o.s.boot.SpringApplication - Starting application on LAPTOP-REMRD8BO with PID 2144 (started by abass in C:\Users\abass\Documents\playground\microservice)
+2021-06-24 12:30:33 [http-nio-8888-exec-9] INFO  o.s.boot.SpringApplication - The following profiles are active: kafka_to_elastic
+2021-06-24 12:30:33 [http-nio-8888-exec-9] INFO  o.s.boot.SpringApplication - Started application in 0.664 seconds (JVM running for 816.614)
+2021-06-24 12:30:33 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client.yml
+2021-06-24 12:34:38 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/AbassAdeyemi/spring-cloud-config-server-repository
+2021-06-24 12:34:40 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Starting application on LAPTOP-REMRD8BO with PID 2144 (started by abass in C:\Users\abass\Documents\playground\microservice)
+2021-06-24 12:34:40 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - The following profiles are active: kafka_to_elastic
+2021-06-24 12:34:40 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Started application in 0.582 seconds (JVM running for 1062.984)
+2021-06-24 12:34:40 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client.yml
+2021-06-24 12:48:36 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/AbassAdeyemi/spring-cloud-config-server-repository
+2021-06-24 12:48:38 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Fetched for remote main and found 1 updates
+2021-06-24 12:48:39 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - Starting application on LAPTOP-REMRD8BO with PID 2144 (started by abass in C:\Users\abass\Documents\playground\microservice)
+2021-06-24 12:48:39 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - The following profiles are active: kafka_to_elastic
+2021-06-24 12:48:39 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - Started application in 0.49 seconds (JVM running for 1902.151)
+2021-06-24 12:48:39 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client-kafka_to_elastic.yml
+2021-06-24 12:48:39 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client.yml
+2021-06-24 12:51:16 [http-nio-8888-exec-4] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/AbassAdeyemi/spring-cloud-config-server-repository
+2021-06-24 12:51:18 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Fetched for remote main and found 1 updates
+2021-06-24 12:51:19 [http-nio-8888-exec-4] INFO  o.s.boot.SpringApplication - Starting application on LAPTOP-REMRD8BO with PID 2144 (started by abass in C:\Users\abass\Documents\playground\microservice)
+2021-06-24 12:51:19 [http-nio-8888-exec-4] INFO  o.s.boot.SpringApplication - The following profiles are active: kafka_to_elastic
+2021-06-24 12:51:19 [http-nio-8888-exec-4] INFO  o.s.boot.SpringApplication - Started application in 0.781 seconds (JVM running for 2062.073)
+2021-06-24 12:51:19 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client-kafka_to_elastic.yml
+2021-06-24 12:51:19 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client.yml
+2021-06-24 13:10:10 [http-nio-8888-exec-7] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/AbassAdeyemi/spring-cloud-config-server-repository
+2021-06-24 13:10:12 [http-nio-8888-exec-7] INFO  o.s.boot.SpringApplication - Starting application on LAPTOP-REMRD8BO with PID 2144 (started by abass in C:\Users\abass\Documents\playground\microservice)
+2021-06-24 13:10:12 [http-nio-8888-exec-7] INFO  o.s.boot.SpringApplication - The following profiles are active: kafka_to_elastic
+2021-06-24 13:10:12 [http-nio-8888-exec-7] INFO  o.s.boot.SpringApplication - Started application in 0.538 seconds (JVM running for 3194.983)
+2021-06-24 13:10:12 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client-kafka_to_elastic.yml
+2021-06-24 13:10:12 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client.yml
+2021-06-24 13:18:31 [http-nio-8888-exec-9] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/AbassAdeyemi/spring-cloud-config-server-repository
+2021-06-24 13:18:33 [http-nio-8888-exec-9] INFO  o.s.boot.SpringApplication - Starting application on LAPTOP-REMRD8BO with PID 2144 (started by abass in C:\Users\abass\Documents\playground\microservice)
+2021-06-24 13:18:33 [http-nio-8888-exec-9] INFO  o.s.boot.SpringApplication - The following profiles are active: kafka_to_elastic
+2021-06-24 13:18:33 [http-nio-8888-exec-9] INFO  o.s.boot.SpringApplication - Started application in 0.584 seconds (JVM running for 3695.821)
+2021-06-24 13:18:33 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client-kafka_to_elastic.yml
+2021-06-24 13:18:33 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client.yml
+2021-06-24 13:47:09 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/AbassAdeyemi/spring-cloud-config-server-repository
+2021-06-24 13:47:11 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Starting application on LAPTOP-REMRD8BO with PID 2144 (started by abass in C:\Users\abass\Documents\playground\microservice)
+2021-06-24 13:47:11 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - The following profiles are active: kafka_to_elastic
+2021-06-24 13:47:11 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Started application in 0.576 seconds (JVM running for 5414.185)
+2021-06-24 13:47:11 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client-kafka_to_elastic.yml
+2021-06-24 13:47:11 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client.yml
+2021-06-24 14:01:39 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/AbassAdeyemi/spring-cloud-config-server-repository
+2021-06-24 14:01:41 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - Starting application on LAPTOP-REMRD8BO with PID 2144 (started by abass in C:\Users\abass\Documents\playground\microservice)
+2021-06-24 14:01:41 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - The following profiles are active: kafka_to_elastic
+2021-06-24 14:01:41 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - Started application in 0.596 seconds (JVM running for 6284.269)
+2021-06-24 14:01:41 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client-kafka_to_elastic.yml
+2021-06-24 14:01:41 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-14810573414914072662/config-client.yml
+2021-06-24 14:05:50 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-06-24 14:05:51 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2021-06-24 14:05:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-06-24 14:05:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrap [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 14:05:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 14:05:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-06-24 14:05:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-06-24 14:05:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 14:05:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 14:05:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 14:05:51 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-06-24 14:05:51 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2021-06-24 14:05:51 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2021-06-24 14:05:52 [main] INFO  c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources
+2021-06-24 14:05:52 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource decrypted [org.springframework.core.env.SystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-06-24 14:05:52 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2021-06-24 14:05:52 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.cloud.bootstrap.BootstrapApplicationListener$ExtendedDefaultPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-06-24 14:05:52 [main] INFO  c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources
+2021-06-24 14:05:52 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource decrypted [org.springframework.core.env.SystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-06-24 14:05:52 [main] INFO  c.h.m.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2021-06-24 14:05:54 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f3fcc2f2-246e-380d-aaf0-274a02e21cba
+2021-06-24 14:05:54 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2021-06-24 14:05:54 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource decrypted [org.springframework.core.env.SystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-06-24 14:05:54 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-06-24 14:05:54 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-06-24 14:05:54 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-06-24 14:05:54 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 14:05:54 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-06-24 14:05:54 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-06-24 14:05:54 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 14:05:54 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 14:05:54 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 14:05:54 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-06-24 14:05:54 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2021-06-24 14:05:54 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-06-24 14:05:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-06-24 14:05:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-06-24 14:05:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-24 14:05:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-06-24 14:05:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-24 14:05:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2681 ms
+2021-06-24 14:05:55 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2021-06-24 14:05:55 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2021-06-24 14:05:56 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-24 14:05:57 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/AbassAdeyemi/spring-cloud-config-server-repository
+2021-06-24 14:06:00 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2986427e, org.springframework.security.web.context.SecurityContextPersistenceFilter@41bdaa81, org.springframework.security.web.header.HeaderWriterFilter@41404aa2, org.springframework.security.web.csrf.CsrfFilter@4c8abec7, org.springframework.security.web.authentication.logout.LogoutFilter@3dc2f14, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4c000cc4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@513fab1e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@35d88a54, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@47d9c01, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59c08cf1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@492fa72a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c1bebca, org.springframework.security.web.session.SessionManagementFilter@31e22365, org.springframework.security.web.access.ExceptionTranslationFilter@30e143ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6294e4a6]
+2021-06-24 14:06:01 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-24 14:06:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2021-06-24 14:06:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2021-06-24 14:06:01 [main] INFO  c.h.m.config.server.ConfigServer - Started ConfigServer in 13.064 seconds (JVM running for 14.307)
+2021-06-24 14:06:23 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-24 14:06:23 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-24 14:06:23 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2021-06-24 14:06:24 [http-nio-8888-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [251] milliseconds.
+2021-06-24 14:06:24 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/AbassAdeyemi/spring-cloud-config-server-repository
+2021-06-24 14:06:25 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Starting application on LAPTOP-REMRD8BO with PID 2560 (started by abass in C:\Users\abass\Documents\playground\microservice)
+2021-06-24 14:06:25 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - The following profiles are active: twitter_to_kafka
+2021-06-24 14:06:25 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Started application in 0.546 seconds (JVM running for 38.278)
+2021-06-24 14:06:25 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-13482166453420504933/config-client-twitter_to_kafka.yml
+2021-06-24 14:06:25 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-13482166453420504933/config-client.yml
+2021-06-24 14:08:16 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/AbassAdeyemi/spring-cloud-config-server-repository
+2021-06-24 14:08:18 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - Starting application on LAPTOP-REMRD8BO with PID 2560 (started by abass in C:\Users\abass\Documents\playground\microservice)
+2021-06-24 14:08:18 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - The following profiles are active: kafka_to_elastic
+2021-06-24 14:08:18 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - Started application in 0.473 seconds (JVM running for 150.433)
+2021-06-24 14:08:18 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-13482166453420504933/config-client-kafka_to_elastic.yml
+2021-06-24 14:08:18 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/abass/AppData/Local/Temp/config-repo-13482166453420504933/config-client.yml

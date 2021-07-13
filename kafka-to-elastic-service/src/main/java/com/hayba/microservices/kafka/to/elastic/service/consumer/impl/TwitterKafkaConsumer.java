@@ -33,12 +33,12 @@ public class TwitterKafkaConsumer implements KafkaConsumer<Long, TwitterAvroMode
 
     private final AvroToElasticModelTransformer avroToElasticModelTransformer;
 
-    private final ElasticIndexClient elasticIndexClient;
+    private final ElasticIndexClient<TwitterIndexModel> elasticIndexClient;
 
     public TwitterKafkaConsumer(KafkaAdminClient kafkaAdminClient, KafkaConfigData kafkaConfigData,
                                 KafkaListenerEndpointRegistry kafkaListenerEndpointRegistry,
                                 AvroToElasticModelTransformer avroToElasticModelTransformer,
-                                ElasticIndexClient elasticIndexClient) {
+                                ElasticIndexClient<TwitterIndexModel> elasticIndexClient) {
         this.kafkaAdminClient = kafkaAdminClient;
         this.kafkaConfigData = kafkaConfigData;
         this.kafkaListenerEndpointRegistry = kafkaListenerEndpointRegistry;
@@ -51,12 +51,13 @@ public class TwitterKafkaConsumer implements KafkaConsumer<Long, TwitterAvroMode
         kafkaAdminClient.checkTopicsCreated();
         LOG.info("Topic with name {} is ready for operation", kafkaConfigData.getTopicNamesToCreate().toArray());
         kafkaListenerEndpointRegistry.getListenerContainer("twitterTopicListener").start();
+        LOG.info("Started Kafka consumer");
     }
 
     @Override
     @KafkaListener(id = "twitterTopicListener", topics = "${kafka-config.topic-name}")
     public void receive(@Payload List<TwitterAvroModel> messages,
-                        @Header(KafkaHeaders.RECEIVED_MESSAGE_KEY) List<Integer> keys,
+                        @Header(KafkaHeaders.RECEIVED_MESSAGE_KEY) List<Long> keys,
                         @Header(KafkaHeaders.RECEIVED_PARTITION_ID) List<Integer> partitions,
                         @Header(KafkaHeaders.OFFSET) List<Long> offsets) {
         LOG.info("{} number of message received with keys {}, partitions {} and offsets {}, " +

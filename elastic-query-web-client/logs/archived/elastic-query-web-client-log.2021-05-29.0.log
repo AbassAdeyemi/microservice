@@ -1,0 +1,162 @@
+2021-05-29 09:29:20 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-29 09:29:22 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2021-05-29 09:29:24 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-05-29 09:29:24 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/elastic-query-web-client,config-client/elastic_query_web": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2021-05-29 09:29:24 [main] INFO  c.h.m.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2021-05-29 09:29:26 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a56887a2-6773-39ab-b137-97bef4067a1c
+2021-05-29 09:29:26 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-29 09:29:26 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-29 09:29:26 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-29 09:29:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-29 09:29:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-29 09:29:27 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-29 09:29:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-29 09:29:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-29 09:29:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3012 ms
+2021-05-29 09:29:28 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'queryController' defined in file [C:\Users\abass\Documents\playground\microservice\elastic-query-web-client\target\classes\com\hayba\microservices\elastic\query\web\client\api\QueryController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hayba.microservices.elastic.query.web.client.service.ElasticQueryWebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-29 09:29:28 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-29 09:29:28 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-29 09:29:28 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hayba.microservices.elastic.query.web.client.api.QueryController required a bean of type 'com.hayba.microservices.elastic.query.web.client.service.ElasticQueryWebClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hayba.microservices.elastic.query.web.client.service.ElasticQueryWebClient' in your configuration.
+
+2021-05-29 09:31:13 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-29 09:31:16 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2021-05-29 09:31:18 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-05-29 09:31:18 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/elastic-query-web-client,config-client/elastic_query_web": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2021-05-29 09:31:18 [main] INFO  c.h.m.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2021-05-29 09:31:20 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a56887a2-6773-39ab-b137-97bef4067a1c
+2021-05-29 09:31:20 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-29 09:31:20 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-29 09:31:20 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-29 09:31:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-29 09:31:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-29 09:31:21 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-29 09:31:21 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-29 09:31:21 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-29 09:31:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3471 ms
+2021-05-29 09:31:22 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'queryController' defined in file [C:\Users\abass\Documents\playground\microservice\elastic-query-web-client\target\classes\com\hayba\microservices\elastic\query\web\client\api\QueryController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hayba.microservices.elastic.query.web.client.service.ElasticQueryWebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-29 09:31:22 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-29 09:31:22 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-29 09:31:22 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hayba.microservices.elastic.query.web.client.api.QueryController required a bean of type 'com.hayba.microservices.elastic.query.web.client.service.ElasticQueryWebClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hayba.microservices.elastic.query.web.client.service.ElasticQueryWebClient' in your configuration.
+
+2021-05-29 09:32:13 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-29 09:32:16 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2021-05-29 09:32:21 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=da8d99ff11397631510750d9b38023cbf0c5ba75, state=null
+2021-05-29 09:32:21 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/AbassAdeyemi/spring-cloud-config-server-repository/config-client-elastic_query_web.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/AbassAdeyemi/spring-cloud-config-server-repository/config-client.yml'}]
+2021-05-29 09:32:21 [main] INFO  c.h.m.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2021-05-29 09:32:23 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a56887a2-6773-39ab-b137-97bef4067a1c
+2021-05-29 09:32:23 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-29 09:32:23 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-29 09:32:23 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-29 09:32:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8184 (http)
+2021-05-29 09:32:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8184"]
+2021-05-29 09:32:24 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-29 09:32:24 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-29 09:32:25 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring embedded WebApplicationContext
+2021-05-29 09:32:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4313 ms
+2021-05-29 09:32:25 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'queryController' defined in file [C:\Users\abass\Documents\playground\microservice\elastic-query-web-client\target\classes\com\hayba\microservices\elastic\query\web\client\api\QueryController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hayba.microservices.elastic.query.web.client.service.ElasticQueryWebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-29 09:32:25 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-29 09:32:25 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-29 09:32:26 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hayba.microservices.elastic.query.web.client.api.QueryController required a bean of type 'com.hayba.microservices.elastic.query.web.client.service.ElasticQueryWebClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hayba.microservices.elastic.query.web.client.service.ElasticQueryWebClient' in your configuration.
+
+2021-05-29 09:36:09 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-29 09:36:12 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2021-05-29 09:36:16 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=da8d99ff11397631510750d9b38023cbf0c5ba75, state=null
+2021-05-29 09:36:16 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/AbassAdeyemi/spring-cloud-config-server-repository/config-client-elastic_query_web.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/AbassAdeyemi/spring-cloud-config-server-repository/config-client.yml'}]
+2021-05-29 09:36:16 [main] INFO  c.h.m.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2021-05-29 09:36:19 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=b56bf217-f283-3e1a-a4f7-182adcdab19c
+2021-05-29 09:36:19 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-29 09:36:19 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-29 09:36:19 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-29 09:36:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8184 (http)
+2021-05-29 09:36:20 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8184"]
+2021-05-29 09:36:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-29 09:36:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-29 09:36:20 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring embedded WebApplicationContext
+2021-05-29 09:36:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4465 ms
+2021-05-29 09:36:21 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'queryController' defined in file [C:\Users\abass\Documents\playground\microservice\elastic-query-web-client\target\classes\com\hayba\microservices\elastic\query\web\client\api\QueryController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticQueryWebClient' defined in file [C:\Users\abass\Documents\playground\microservice\elastic-query-web-client\target\classes\com\hayba\microservices\elastic\query\web\client\service\impl\TwitterElasticQueryWebClient.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hayba.microservices.config.ElasticQueryWebClientConfig$Query' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-29 09:36:21 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-29 09:36:21 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-29 09:36:22 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.hayba.microservices.elastic.query.web.client.service.impl.TwitterElasticQueryWebClient required a bean of type 'com.hayba.microservices.config.ElasticQueryWebClientConfig$Query' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hayba.microservices.config.ElasticQueryWebClientConfig$Query' in your configuration.
+
+2021-05-29 09:43:10 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-29 09:43:12 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2021-05-29 09:43:15 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=da8d99ff11397631510750d9b38023cbf0c5ba75, state=null
+2021-05-29 09:43:15 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/AbassAdeyemi/spring-cloud-config-server-repository/config-client-elastic_query_web.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/AbassAdeyemi/spring-cloud-config-server-repository/config-client.yml'}]
+2021-05-29 09:43:15 [main] INFO  c.h.m.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2021-05-29 09:43:17 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=b56bf217-f283-3e1a-a4f7-182adcdab19c
+2021-05-29 09:43:17 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-29 09:43:17 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-29 09:43:17 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-29 09:43:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8184 (http)
+2021-05-29 09:43:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8184"]
+2021-05-29 09:43:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-29 09:43:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-29 09:43:18 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring embedded WebApplicationContext
+2021-05-29 09:43:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2722 ms
+2021-05-29 09:43:19 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c5d3a37, org.springframework.security.web.context.SecurityContextPersistenceFilter@5657967b, org.springframework.security.web.header.HeaderWriterFilter@367d34c0, org.springframework.security.web.csrf.CsrfFilter@1cd2ff5b, org.springframework.security.web.authentication.logout.LogoutFilter@46f73ffa, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@636985df, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@578a5ce8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61359e87, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e3d2ebd, org.springframework.security.web.session.SessionManagementFilter@6c0b51da, org.springframework.security.web.access.ExceptionTranslationFilter@34136bd1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2bec068b]
+2021-05-29 09:43:20 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-29 09:43:20 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2021-05-29 09:43:21 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-05-29 09:43:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8184"]
+2021-05-29 09:43:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8184 (http) with context path '/elastic-query-web-client'
+2021-05-29 09:43:22 [main] INFO  c.h.m.e.q.w.c.ElasticQueryWebClientApplication - Started ElasticQueryWebClientApplication in 13.816 seconds (JVM running for 15.264)

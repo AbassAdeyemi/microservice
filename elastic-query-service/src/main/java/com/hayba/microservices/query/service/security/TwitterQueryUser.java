@@ -7,6 +7,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.Map;
 
 import static com.hayba.microservices.query.service.security.Constants.*;
 
@@ -15,6 +16,8 @@ import static com.hayba.microservices.query.service.security.Constants.*;
 public class TwitterQueryUser implements UserDetails {
 
     private String username;
+
+    private Map<String, PermissionType> permissions;
 
     private Collection<? extends GrantedAuthority> authorities;
 

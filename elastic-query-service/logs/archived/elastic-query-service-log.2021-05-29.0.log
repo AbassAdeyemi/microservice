@@ -1,0 +1,9 @@
+2021-05-29 08:36:22 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-29 08:36:24 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2021-05-29 08:36:27 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-05-29 08:36:27 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/elastic-query-service,config-client/elastic-query": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2021-05-29 08:36:27 [main] INFO  c.h.m.q.s.ElasticQueryServiceApplication - The following profiles are active: elastic-query
+2021-05-29 08:36:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-05-29 08:36:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 131ms. Found 1 Elasticsearch repository interfaces.
+2021-05-29 08:36:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-05-29 08:36:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 Reactive Elasticsearch repository interfaces.

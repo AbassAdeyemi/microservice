@@ -74,22 +74,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
-    private Converter<Jwt,? extends AbstractAuthenticationToken> twitterQueryUserJwtConverter() {
+    Converter<Jwt,? extends AbstractAuthenticationToken> twitterQueryUserJwtConverter() {
         return new TwitterQueryUserJwtConverter(twitterQueryUserDetailsService);
-    }
-
-//    @Override
-//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-//        auth
-//                .inMemoryAuthentication()
-//                .withUser(userConfigData.getUsername())
-//                .password(passwordEncoder().encode(userConfigData.getPassword()))
-//                .roles(userConfigData.getRole());
-//    }
-
-    @Bean
-    protected PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
     }
 
     @Override
