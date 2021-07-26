@@ -9,3 +9,8 @@ spring:
       uri: http://localhost:8888
       username: spring_cloud_user
       password: '{cipher}048940b28f6bc7d572fb292b7fa31f023be33d45ad320174ecf9f4377875983dd1e684252208cd8c0d8e7213a87df9b1'
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-service-1:8761/eureka/,http://discovery-service-2:8762/eureka/

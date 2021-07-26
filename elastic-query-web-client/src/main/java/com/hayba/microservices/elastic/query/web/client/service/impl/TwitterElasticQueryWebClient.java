@@ -2,6 +2,7 @@ package com.hayba.microservices.elastic.query.web.client.service.impl;
 
 import com.hayba.microservices.config.ElasticQueryWebClientConfig;
 import com.hayba.microservices.elastic.query.web.client.common.exception.ElasticQueryWebClientException;
+import com.hayba.microservices.elastic.query.web.client.common.model.ElasticQueryWebClientAnalyticsResponseModel;
 import com.hayba.microservices.elastic.query.web.client.common.model.ElasticQueryWebClientRequestModel;
 import com.hayba.microservices.elastic.query.web.client.common.model.ElasticQueryWebClientResponseModel;
 import com.hayba.microservices.elastic.query.web.client.service.ElasticQueryWebClient;
@@ -33,15 +34,15 @@ public class TwitterElasticQueryWebClient implements ElasticQueryWebClient {
     }
 
     @Override
-    public List<ElasticQueryWebClientResponseModel> getDataByText(ElasticQueryWebClientRequestModel requestModel) {
+    public ElasticQueryWebClientAnalyticsResponseModel getDataByText(ElasticQueryWebClientRequestModel requestModel) {
        LOG.info("Querying by text: {}", requestModel.getText());
        return getWebClient(requestModel)
-               .bodyToFlux(ElasticQueryWebClientResponseModel.class)
-               .collectList()
+               .bodyToMono(ElasticQueryWebClientAnalyticsResponseModel.class)
                .block();
     }
 
     private WebClient.ResponseSpec getWebClient(ElasticQueryWebClientRequestModel requestModel) {
+        LOG.info("Web client config: {}", this.webClientConfig);
         return webClientBuilder
                 .build()
                 .method(HttpMethod.valueOf(webClientConfig.getQueryByText().getMethod()))

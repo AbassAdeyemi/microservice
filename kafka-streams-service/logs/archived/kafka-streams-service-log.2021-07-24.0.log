@@ -1,0 +1,1059 @@
+2021-07-24 18:17:26 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-07-24 18:17:30 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2021-07-24 18:17:32 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-streams-service,config-client, profiles=[kafka_streams], label=null, version=070383a0ebb5bd6fe7ec684f73cbafb1c8d468f4, state=null
+2021-07-24 18:17:32 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/AbassAdeyemi/spring-cloud-config-server-repository/config-client-kafka_streams.yaml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/AbassAdeyemi/spring-cloud-config-server-repository/config-client.yml'}]
+2021-07-24 18:17:32 [main] INFO  c.h.m.k.s.s.KafkaStreamsServiceApplication - The following profiles are active: kafka_streams
+2021-07-24 18:17:34 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d86d0196-12a0-39a9-8d80-39da4bb7f98b
+2021-07-24 18:17:34 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$dafe0d5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-24 18:17:34 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@17229821' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-24 18:17:34 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-24 18:17:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8187 (http)
+2021-07-24 18:17:35 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8187"]
+2021-07-24 18:17:35 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-24 18:17:35 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-07-24 18:17:36 [main] INFO  o.a.c.c.C.[.[.[/kafka-streams-service] - Initializing Spring embedded WebApplicationContext
+2021-07-24 18:17:36 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3116 ms
+2021-07-24 18:17:36 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-07-24 18:17:36 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.6.0
+2021-07-24 18:17:36 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 62abe01bee039651
+2021-07-24 18:17:36 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1627147056540
+2021-07-24 18:17:42 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-24 18:17:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/api-docs'], []
+2021-07-24 18:17:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70840a5a, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d4c4b14, org.springframework.security.web.header.HeaderWriterFilter@26c6288d, org.springframework.security.web.authentication.logout.LogoutFilter@2567c091, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@433ae0b0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11170228, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e0163cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7af9595d, org.springframework.security.web.session.SessionManagementFilter@7c048b30, org.springframework.security.web.access.ExceptionTranslationFilter@6c1bebca, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46b21632]
+2021-07-24 18:17:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8187"]
+2021-07-24 18:17:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8187 (http) with context path '/kafka-streams-service'
+2021-07-24 18:17:45 [main] INFO  c.h.m.k.s.s.KafkaStreamsServiceApplication - Started KafkaStreamsServiceApplication in 23.095 seconds (JVM running for 25.027)
+2021-07-24 18:17:45 [main] INFO  c.h.m.k.s.s.KafkaStreamsServiceApplication - App starts...
+2021-07-24 18:17:46 [main] INFO  c.h.m.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic, twitter-analytics-topic], attempt 0
+2021-07-24 18:17:46 [main] INFO  c.h.m.k.s.s.i.i.KafkaStreamsInitializer - I got here
+2021-07-24 18:17:47 [main] INFO  c.h.m.k.s.s.i.i.KafkaStreamsInitializer - Topics with name twitter-topic is ready for operations!
+2021-07-24 18:17:47 [main] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - I got here
+2021-07-24 18:17:47 [main] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-07-24 18:17:47 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-07-24 18:17:47 [main] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-07-24 18:17:47 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-07-24 18:17:47 [main] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Defined topology: Topologies:
+   Sub-topology: 0
+    Source: KSTREAM-SOURCE-0000000000 (topics: [twitter-topic])
+      --> KSTREAM-FLATMAPVALUES-0000000001
+    Processor: KSTREAM-FLATMAPVALUES-0000000001 (stores: [])
+      --> KSTREAM-KEY-SELECT-0000000002
+      <-- KSTREAM-SOURCE-0000000000
+    Processor: KSTREAM-KEY-SELECT-0000000002 (stores: [])
+      --> word-count-store-repartition-filter
+      <-- KSTREAM-FLATMAPVALUES-0000000001
+    Processor: word-count-store-repartition-filter (stores: [])
+      --> word-count-store-repartition-sink
+      <-- KSTREAM-KEY-SELECT-0000000002
+    Sink: word-count-store-repartition-sink (topic: word-count-store-repartition)
+      <-- word-count-store-repartition-filter
+
+  Sub-topology: 1
+    Source: word-count-store-repartition-source (topics: [word-count-store-repartition])
+      --> KSTREAM-AGGREGATE-0000000003
+    Processor: KSTREAM-AGGREGATE-0000000003 (stores: [word-count-store])
+      --> KTABLE-TOSTREAM-0000000007
+      <-- word-count-store-repartition-source
+    Processor: KTABLE-TOSTREAM-0000000007 (stores: [])
+      --> KSTREAM-MAP-0000000008
+      <-- KSTREAM-AGGREGATE-0000000003
+    Processor: KSTREAM-MAP-0000000008 (stores: [])
+      --> KSTREAM-SINK-0000000009
+      <-- KTABLE-TOSTREAM-0000000007
+    Sink: KSTREAM-SINK-0000000009 (topic: twitter-analytics-topic)
+      <-- KSTREAM-MAP-0000000008
+
+
+2021-07-24 18:17:47 [main] INFO  o.apache.kafka.streams.StreamsConfig - StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = kafka-streams-application
+	application.server = 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	partition.grouper = class org.apache.kafka.streams.processor.DefaultPartitionGrouper
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	replication.factor = 1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = ${HOME}/kafka-streaming-state
+	topology.optimization = none
+	upgrade.from = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2021-07-24 18:17:47 [main] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8] Kafka Streams version: 2.6.0
+2021-07-24 18:17:47 [main] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8] Kafka Streams commit ID: 62abe01bee039651
+2021-07-24 18:17:47 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-admin
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-07-24 18:17:47 [main] WARN  o.a.k.c.admin.AdminClientConfig - The configuration 'schema.registry.url' was supplied but isn't a known config.
+2021-07-24 18:17:47 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.6.0
+2021-07-24 18:17:47 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 62abe01bee039651
+2021-07-24 18:17:47 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1627147067470
+2021-07-24 18:17:47 [main] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] Creating restore consumer client
+2021-07-24 18:17:47 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2021-07-24 18:17:47 [main] WARN  o.a.k.c.consumer.ConsumerConfig - The configuration 'schema.registry.url' was supplied but isn't a known config.
+2021-07-24 18:17:47 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.6.0
+2021-07-24 18:17:47 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 62abe01bee039651
+2021-07-24 18:17:47 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1627147067527
+2021-07-24 18:17:47 [main] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] Creating thread producer client
+2021-07-24 18:17:47 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 10000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2021-07-24 18:17:47 [main] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'schema.registry.url' was supplied but isn't a known config.
+2021-07-24 18:17:47 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.6.0
+2021-07-24 18:17:47 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 62abe01bee039651
+2021-07-24 18:17:47 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1627147067579
+2021-07-24 18:17:47 [main] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] Creating consumer client
+2021-07-24 18:17:47 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = false
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-streams-application
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2021-07-24 18:17:47 [main] INFO  o.a.k.s.p.i.a.AssignorConfiguration - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer] Cooperative rebalancing enabled now
+2021-07-24 18:17:47 [kafka-producer-network-thread | kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-producer] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-producer] Cluster ID: hoXMS9ZmRfaak-WMMzaz5g
+2021-07-24 18:17:47 [main] WARN  o.a.k.c.consumer.ConsumerConfig - The configuration 'schema.registry.url' was supplied but isn't a known config.
+2021-07-24 18:17:47 [main] WARN  o.a.k.c.consumer.ConsumerConfig - The configuration 'admin.retry.backoff.ms' was supplied but isn't a known config.
+2021-07-24 18:17:47 [main] WARN  o.a.k.c.consumer.ConsumerConfig - The configuration 'admin.retries' was supplied but isn't a known config.
+2021-07-24 18:17:47 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.6.0
+2021-07-24 18:17:47 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 62abe01bee039651
+2021-07-24 18:17:47 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1627147067667
+2021-07-24 18:17:47 [main] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8] State transition from CREATED to REBALANCING
+2021-07-24 18:17:47 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] Starting
+2021-07-24 18:17:47 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] State transition from CREATED to STARTING
+2021-07-24 18:17:47 [main] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - kafka streams started
+2021-07-24 18:17:47 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Subscribed to topic(s): kafka-streams-application-word-count-store-repartition, twitter-topic
+2021-07-24 18:17:47 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 3 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:47 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Cluster ID: hoXMS9ZmRfaak-WMMzaz5g
+2021-07-24 18:17:47 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 6 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:48 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 7 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:48 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 8 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:48 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 10 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:48 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 13 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:48 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 15 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:48 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 17 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:48 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 20 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:48 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 23 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:49 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 26 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:49 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 28 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:49 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 30 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:49 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 32 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:49 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 35 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:49 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 37 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:49 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 40 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:49 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 43 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:50 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 46 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:51 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 49 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:51 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 51 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:51 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 53 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:51 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 56 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:51 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 58 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:51 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 60 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:51 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 63 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:51 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 66 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:52 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 69 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:52 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 71 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:52 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 73 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:52 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 75 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:52 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 78 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:52 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 81 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:52 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 84 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:52 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Discovered group coordinator localhost:19092 (id: 2147483646 rack: null)
+2021-07-24 18:17:52 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] (Re-)joining group
+2021-07-24 18:17:52 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 87 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:52 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Join group failed with org.apache.kafka.common.errors.CoordinatorLoadInProgressException: The coordinator is loading and hence can't process requests.
+2021-07-24 18:17:52 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] (Re-)joining group
+2021-07-24 18:17:53 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 91 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:53 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 92 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:53 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 93 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:53 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 94 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:53 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 95 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:53 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 96 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:53 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 97 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:53 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 98 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:53 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 99 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:53 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 100 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:54 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 101 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:54 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 102 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:54 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 103 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:54 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 104 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:54 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 105 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:54 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 106 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:54 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 107 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:54 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 108 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:54 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 109 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:55 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 110 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:55 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 111 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:55 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 112 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:55 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 113 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:55 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 114 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:55 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 115 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:55 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 116 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:55 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 117 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:55 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 118 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:55 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 119 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 120 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Error while fetching metadata with correlation id 121 : {kafka-streams-application-word-count-store-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.a.k.s.p.i.assignment.ClientState - Task 1_0 had endOffsetSum=0 smaller than offsetSum=373 on member 97fb1ccf-b3d3-416a-bb58-a783c9c344f8. This probably means the task is corrupted, which in turn indicates that it will need to restore from scratch if it gets assigned. The assignor will de-prioritize returning this task to this member in the hopes that some other member may be able to re-use its state.
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.a.k.s.p.i.assignment.ClientState - Task 1_1 had endOffsetSum=0 smaller than offsetSum=339 on member 97fb1ccf-b3d3-416a-bb58-a783c9c344f8. This probably means the task is corrupted, which in turn indicates that it will need to restore from scratch if it gets assigned. The assignor will de-prioritize returning this task to this member in the hopes that some other member may be able to re-use its state.
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.a.k.s.p.i.assignment.ClientState - Task 1_2 had endOffsetSum=0 smaller than offsetSum=454 on member 97fb1ccf-b3d3-416a-bb58-a783c9c344f8. This probably means the task is corrupted, which in turn indicates that it will need to restore from scratch if it gets assigned. The assignor will de-prioritize returning this task to this member in the hopes that some other member may be able to re-use its state.
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.a.HighAvailabilityTaskAssignor - Decided on assignment: {97fb1ccf-b3d3-416a-bb58-a783c9c344f8=[activeTasks: ([0_0, 0_1, 0_2, 1_0, 1_1, 1_2]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([1_0, 1_1, 1_2]) prevOwnedPartitionsByConsumerId: ([]) changelogOffsetTotalsByTask: ([1_0=373, 1_1=339, 1_2=454]) taskLagTotals: ([1_0=0, 1_1=0, 1_2=0]) capacity: 1 assigned: 6]} with no followup probing rebalance.
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.StreamsPartitionAssignor - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer] Assigned tasks to clients as 
+97fb1ccf-b3d3-416a-bb58-a783c9c344f8=[activeTasks: ([0_0, 0_1, 0_2, 1_0, 1_1, 1_2]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([1_0, 1_1, 1_2]) prevOwnedPartitionsByConsumerId: ([]) changelogOffsetTotalsByTask: ([1_0=373, 1_1=339, 1_2=454]) taskLagTotals: ([1_0=0, 1_1=0, 1_2=0]) capacity: 1 assigned: 6].
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.StreamsPartitionAssignor - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Finished assignment for group at generation 1: {kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer-b2f40fe6-3dec-40f0-a716-f3e5802e05fd=Assignment(partitions=[kafka-streams-application-word-count-store-repartition-0, kafka-streams-application-word-count-store-repartition-1, kafka-streams-application-word-count-store-repartition-2, twitter-topic-0, twitter-topic-1, twitter-topic-2], userDataSize=88)}
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Successfully joined group with generation 1
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Updating assignment with
+	Assigned partitions:                       [twitter-topic-0, twitter-topic-1, kafka-streams-application-word-count-store-repartition-1, twitter-topic-2, kafka-streams-application-word-count-store-repartition-0, kafka-streams-application-word-count-store-repartition-2]
+	Current owned partitions:                  []
+	Added partitions (assigned - owned):       [twitter-topic-0, twitter-topic-1, kafka-streams-application-word-count-store-repartition-1, twitter-topic-2, kafka-streams-application-word-count-store-repartition-0, kafka-streams-application-word-count-store-repartition-2]
+	Revoked partitions (owned - assigned):     []
+
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Notifying assignor about the new Assignment(partitions=[twitter-topic-0, twitter-topic-1, twitter-topic-2, kafka-streams-application-word-count-store-repartition-0, kafka-streams-application-word-count-store-repartition-1, kafka-streams-application-word-count-store-repartition-2], userDataSize=88)
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.StreamsPartitionAssignor - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.TaskManager - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] Handle new assignment with:
+	New active tasks: [0_0, 0_1, 1_0, 0_2, 1_1, 1_2]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Adding newly assigned partitions: twitter-topic-0, twitter-topic-1, kafka-streams-application-word-count-store-repartition-1, twitter-topic-2, kafka-streams-application-word-count-store-repartition-0, kafka-streams-application-word-count-store-repartition-2
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] (Re-)joining group
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [0_0] Initialized
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [0_1] Initialized
+2021-07-24 18:17:56 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [0_2] Initialized
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.s.i.RocksDBTimestampedStore - Opening store word-count-store in regular mode
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_0] Initialized
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.s.i.RocksDBTimestampedStore - Opening store word-count-store in regular mode
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_1] Initialized
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.s.i.RocksDBTimestampedStore - Opening store word-count-store in regular mode
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_2] Initialized
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.a.HighAvailabilityTaskAssignor - Decided on assignment: {97fb1ccf-b3d3-416a-bb58-a783c9c344f8=[activeTasks: ([0_0, 0_1, 0_2, 1_0, 1_1, 1_2]) standbyTasks: ([]) prevActiveTasks: ([0_0, 0_1, 0_2, 1_0, 1_1, 1_2]) prevStandbyTasks: ([]) prevOwnedPartitionsByConsumerId: ([kafka-streams-application-word-count-store-repartition-0, kafka-streams-application-word-count-store-repartition-1, kafka-streams-application-word-count-store-repartition-2, twitter-topic-0, twitter-topic-1, twitter-topic-2]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([1_0=0, 1_1=0, 1_2=0]) capacity: 1 assigned: 6]} with no followup probing rebalance.
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.StreamsPartitionAssignor - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer] Assigned tasks to clients as 
+97fb1ccf-b3d3-416a-bb58-a783c9c344f8=[activeTasks: ([0_0, 0_1, 0_2, 1_0, 1_1, 1_2]) standbyTasks: ([]) prevActiveTasks: ([0_0, 0_1, 0_2, 1_0, 1_1, 1_2]) prevStandbyTasks: ([]) prevOwnedPartitionsByConsumerId: ([kafka-streams-application-word-count-store-repartition-0, kafka-streams-application-word-count-store-repartition-1, kafka-streams-application-word-count-store-repartition-2, twitter-topic-0, twitter-topic-1, twitter-topic-2]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([1_0=0, 1_1=0, 1_2=0]) capacity: 1 assigned: 6].
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.StreamsPartitionAssignor - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Finished assignment for group at generation 2: {kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer-b2f40fe6-3dec-40f0-a716-f3e5802e05fd=Assignment(partitions=[kafka-streams-application-word-count-store-repartition-0, kafka-streams-application-word-count-store-repartition-1, kafka-streams-application-word-count-store-repartition-2, twitter-topic-0, twitter-topic-1, twitter-topic-2], userDataSize=88)}
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition twitter-topic-0
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [0_0] Restored and ready to run
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Successfully joined group with generation 2
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition twitter-topic-1
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [0_1] Restored and ready to run
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition twitter-topic-2
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [0_2] Restored and ready to run
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Subscribed to partition(s): kafka-streams-application-word-count-store-changelog-2, kafka-streams-application-word-count-store-changelog-1, kafka-streams-application-word-count-store-changelog-0
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Seeking to offset 340 for partition kafka-streams-application-word-count-store-changelog-1
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Seeking to offset 374 for partition kafka-streams-application-word-count-store-changelog-0
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Seeking to offset 455 for partition kafka-streams-application-word-count-store-changelog-2
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Cluster ID: hoXMS9ZmRfaak-WMMzaz5g
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.consumer.internals.Fetcher - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Fetch position FetchPosition{offset=455, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:39092 (id: 3 rack: null)], epoch=absent}} is out of range for partition kafka-streams-application-word-count-store-changelog-2, raising error to the application since no reset policy is configured
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.a.k.s.p.i.StoreChangelogReader - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] Encountered org.apache.kafka.clients.consumer.OffsetOutOfRangeException fetching records from restore consumer for partitions [kafka-streams-application-word-count-store-changelog-2], it is likely that the consumer's position has fallen out of the topic partition offset range because the topic was truncated or compacted on the broker, marking the corresponding tasks as corrupted and re-initializing it later.
+org.apache.kafka.clients.consumer.OffsetOutOfRangeException: Fetch position FetchPosition{offset=455, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:39092 (id: 3 rack: null)], epoch=absent}} is out of range for partition kafka-streams-application-word-count-store-changelog-2
+	at org.apache.kafka.clients.consumer.internals.Fetcher.handleOffsetOutOfRange(Fetcher.java:1344)
+	at org.apache.kafka.clients.consumer.internals.Fetcher.initializeCompletedFetch(Fetcher.java:1296)
+	at org.apache.kafka.clients.consumer.internals.Fetcher.fetchedRecords(Fetcher.java:611)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.pollForFetches(KafkaConsumer.java:1308)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1237)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1210)
+	at org.apache.kafka.streams.processor.internals.StoreChangelogReader.restore(StoreChangelogReader.java:433)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:669)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:551)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:510)
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.a.k.s.p.internals.StreamThread - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] Detected the states of tasks {1_2=[kafka-streams-application-word-count-store-changelog-2]} are corrupted. Will close the task as dirty and re-create and bootstrap from scratch.
+org.apache.kafka.streams.errors.TaskCorruptedException: Tasks with changelogs {1_2=[kafka-streams-application-word-count-store-changelog-2]} are corrupted and hence needs to be re-initialized
+	at org.apache.kafka.streams.processor.internals.StoreChangelogReader.restore(StoreChangelogReader.java:446)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:669)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:551)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:510)
+Caused by: org.apache.kafka.clients.consumer.OffsetOutOfRangeException: Fetch position FetchPosition{offset=455, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:39092 (id: 3 rack: null)], epoch=absent}} is out of range for partition kafka-streams-application-word-count-store-changelog-2
+	at org.apache.kafka.clients.consumer.internals.Fetcher.handleOffsetOutOfRange(Fetcher.java:1344)
+	at org.apache.kafka.clients.consumer.internals.Fetcher.initializeCompletedFetch(Fetcher.java:1296)
+	at org.apache.kafka.clients.consumer.internals.Fetcher.fetchedRecords(Fetcher.java:611)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.pollForFetches(KafkaConsumer.java:1308)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1237)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1210)
+	at org.apache.kafka.streams.processor.internals.StoreChangelogReader.restore(StoreChangelogReader.java:433)
+	... 3 common frames omitted
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_2] Suspended restoring
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Subscribed to partition(s): kafka-streams-application-word-count-store-changelog-1, kafka-streams-application-word-count-store-changelog-0
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.RecordCollectorImpl - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_2] Closing record collector dirty
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_2] Closed dirty
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition kafka-streams-application-word-count-store-repartition-2
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] No custom setting defined for topic 'kafka-streams-application-word-count-store-repartition' using original config 'earliest' for offset reset
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Seeking to EARLIEST offset of partition kafka-streams-application-word-count-store-repartition-2
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Updating assignment with
+	Assigned partitions:                       [twitter-topic-0, twitter-topic-1, kafka-streams-application-word-count-store-repartition-1, twitter-topic-2, kafka-streams-application-word-count-store-repartition-0, kafka-streams-application-word-count-store-repartition-2]
+	Current owned partitions:                  [twitter-topic-0, twitter-topic-1, kafka-streams-application-word-count-store-repartition-1, twitter-topic-2, kafka-streams-application-word-count-store-repartition-0, kafka-streams-application-word-count-store-repartition-2]
+	Added partitions (assigned - owned):       []
+	Revoked partitions (owned - assigned):     []
+
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Notifying assignor about the new Assignment(partitions=[twitter-topic-0, twitter-topic-1, twitter-topic-2, kafka-streams-application-word-count-store-repartition-0, kafka-streams-application-word-count-store-repartition-1, kafka-streams-application-word-count-store-repartition-2], userDataSize=88)
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.StreamsPartitionAssignor - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.TaskManager - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] Handle new assignment with:
+	New active tasks: [0_0, 0_1, 1_0, 0_2, 1_1, 1_2]
+	New standby tasks: []
+	Existing active tasks: [0_0, 0_1, 1_0, 0_2, 1_1, 1_2]
+	Existing standby tasks: []
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Adding newly assigned partitions: 
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] State transition from PARTITIONS_ASSIGNED to PARTITIONS_ASSIGNED
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.s.i.RocksDBTimestampedStore - Opening store word-count-store in regular mode
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.ProcessorStateManager - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_2] State store word-count-store did not find checkpoint offset, hence would default to the starting offset at changelog kafka-streams-application-word-count-store-changelog-2
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_2] Initialized
+2021-07-24 18:17:59 [kafka-coordinator-heartbeat-thread | kafka-streams-application] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition twitter-topic-0
+2021-07-24 18:17:59 [kafka-coordinator-heartbeat-thread | kafka-streams-application] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition twitter-topic-1
+2021-07-24 18:17:59 [kafka-coordinator-heartbeat-thread | kafka-streams-application] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition kafka-streams-application-word-count-store-repartition-1
+2021-07-24 18:17:59 [kafka-coordinator-heartbeat-thread | kafka-streams-application] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition twitter-topic-2
+2021-07-24 18:17:59 [kafka-coordinator-heartbeat-thread | kafka-streams-application] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition kafka-streams-application-word-count-store-repartition-0
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Subscribed to partition(s): kafka-streams-application-word-count-store-changelog-2, kafka-streams-application-word-count-store-changelog-1, kafka-streams-application-word-count-store-changelog-0
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Seeking to EARLIEST offset of partition kafka-streams-application-word-count-store-changelog-2
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Resetting offset for partition kafka-streams-application-word-count-store-changelog-2 to offset 0.
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.consumer.internals.Fetcher - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Fetch position FetchPosition{offset=340, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=absent}} is out of range for partition kafka-streams-application-word-count-store-changelog-1, raising error to the application since no reset policy is configured
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.a.k.s.p.i.StoreChangelogReader - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] Encountered org.apache.kafka.clients.consumer.OffsetOutOfRangeException fetching records from restore consumer for partitions [kafka-streams-application-word-count-store-changelog-1], it is likely that the consumer's position has fallen out of the topic partition offset range because the topic was truncated or compacted on the broker, marking the corresponding tasks as corrupted and re-initializing it later.
+org.apache.kafka.clients.consumer.OffsetOutOfRangeException: Fetch position FetchPosition{offset=340, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=absent}} is out of range for partition kafka-streams-application-word-count-store-changelog-1
+	at org.apache.kafka.clients.consumer.internals.Fetcher.handleOffsetOutOfRange(Fetcher.java:1344)
+	at org.apache.kafka.clients.consumer.internals.Fetcher.initializeCompletedFetch(Fetcher.java:1296)
+	at org.apache.kafka.clients.consumer.internals.Fetcher.fetchedRecords(Fetcher.java:611)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.pollForFetches(KafkaConsumer.java:1283)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1237)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1210)
+	at org.apache.kafka.streams.processor.internals.StoreChangelogReader.restore(StoreChangelogReader.java:433)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:669)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:551)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:510)
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.a.k.s.p.internals.StreamThread - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] Detected the states of tasks {1_1=[kafka-streams-application-word-count-store-changelog-1]} are corrupted. Will close the task as dirty and re-create and bootstrap from scratch.
+org.apache.kafka.streams.errors.TaskCorruptedException: Tasks with changelogs {1_1=[kafka-streams-application-word-count-store-changelog-1]} are corrupted and hence needs to be re-initialized
+	at org.apache.kafka.streams.processor.internals.StoreChangelogReader.restore(StoreChangelogReader.java:446)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:669)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:551)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:510)
+Caused by: org.apache.kafka.clients.consumer.OffsetOutOfRangeException: Fetch position FetchPosition{offset=340, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=absent}} is out of range for partition kafka-streams-application-word-count-store-changelog-1
+	at org.apache.kafka.clients.consumer.internals.Fetcher.handleOffsetOutOfRange(Fetcher.java:1344)
+	at org.apache.kafka.clients.consumer.internals.Fetcher.initializeCompletedFetch(Fetcher.java:1296)
+	at org.apache.kafka.clients.consumer.internals.Fetcher.fetchedRecords(Fetcher.java:611)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.pollForFetches(KafkaConsumer.java:1283)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1237)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1210)
+	at org.apache.kafka.streams.processor.internals.StoreChangelogReader.restore(StoreChangelogReader.java:433)
+	... 3 common frames omitted
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_1] Suspended restoring
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Subscribed to partition(s): kafka-streams-application-word-count-store-changelog-2, kafka-streams-application-word-count-store-changelog-0
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.RecordCollectorImpl - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_1] Closing record collector dirty
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_1] Closed dirty
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition kafka-streams-application-word-count-store-repartition-1
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] No custom setting defined for topic 'kafka-streams-application-word-count-store-repartition' using original config 'earliest' for offset reset
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Seeking to EARLIEST offset of partition kafka-streams-application-word-count-store-repartition-1
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.s.i.RocksDBTimestampedStore - Opening store word-count-store in regular mode
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.ProcessorStateManager - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_1] State store word-count-store did not find checkpoint offset, hence would default to the starting offset at changelog kafka-streams-application-word-count-store-changelog-1
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_1] Initialized
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Subscribed to partition(s): kafka-streams-application-word-count-store-changelog-2, kafka-streams-application-word-count-store-changelog-1, kafka-streams-application-word-count-store-changelog-0
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Seeking to EARLIEST offset of partition kafka-streams-application-word-count-store-changelog-1
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Resetting offset for partition kafka-streams-application-word-count-store-changelog-1 to offset 0.
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.consumer.internals.Fetcher - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Fetch position FetchPosition{offset=374, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:29092 (id: 2 rack: null)], epoch=absent}} is out of range for partition kafka-streams-application-word-count-store-changelog-0, raising error to the application since no reset policy is configured
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.a.k.s.p.i.StoreChangelogReader - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] Encountered org.apache.kafka.clients.consumer.OffsetOutOfRangeException fetching records from restore consumer for partitions [kafka-streams-application-word-count-store-changelog-0], it is likely that the consumer's position has fallen out of the topic partition offset range because the topic was truncated or compacted on the broker, marking the corresponding tasks as corrupted and re-initializing it later.
+org.apache.kafka.clients.consumer.OffsetOutOfRangeException: Fetch position FetchPosition{offset=374, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:29092 (id: 2 rack: null)], epoch=absent}} is out of range for partition kafka-streams-application-word-count-store-changelog-0
+	at org.apache.kafka.clients.consumer.internals.Fetcher.handleOffsetOutOfRange(Fetcher.java:1344)
+	at org.apache.kafka.clients.consumer.internals.Fetcher.initializeCompletedFetch(Fetcher.java:1296)
+	at org.apache.kafka.clients.consumer.internals.Fetcher.fetchedRecords(Fetcher.java:611)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.pollForFetches(KafkaConsumer.java:1283)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1237)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1210)
+	at org.apache.kafka.streams.processor.internals.StoreChangelogReader.restore(StoreChangelogReader.java:433)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:669)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:551)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:510)
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] WARN  o.a.k.s.p.internals.StreamThread - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] Detected the states of tasks {1_0=[kafka-streams-application-word-count-store-changelog-0]} are corrupted. Will close the task as dirty and re-create and bootstrap from scratch.
+org.apache.kafka.streams.errors.TaskCorruptedException: Tasks with changelogs {1_0=[kafka-streams-application-word-count-store-changelog-0]} are corrupted and hence needs to be re-initialized
+	at org.apache.kafka.streams.processor.internals.StoreChangelogReader.restore(StoreChangelogReader.java:446)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:669)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:551)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:510)
+Caused by: org.apache.kafka.clients.consumer.OffsetOutOfRangeException: Fetch position FetchPosition{offset=374, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:29092 (id: 2 rack: null)], epoch=absent}} is out of range for partition kafka-streams-application-word-count-store-changelog-0
+	at org.apache.kafka.clients.consumer.internals.Fetcher.handleOffsetOutOfRange(Fetcher.java:1344)
+	at org.apache.kafka.clients.consumer.internals.Fetcher.initializeCompletedFetch(Fetcher.java:1296)
+	at org.apache.kafka.clients.consumer.internals.Fetcher.fetchedRecords(Fetcher.java:611)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.pollForFetches(KafkaConsumer.java:1283)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1237)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1210)
+	at org.apache.kafka.streams.processor.internals.StoreChangelogReader.restore(StoreChangelogReader.java:433)
+	... 3 common frames omitted
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_0] Suspended restoring
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Subscribed to partition(s): kafka-streams-application-word-count-store-changelog-2, kafka-streams-application-word-count-store-changelog-1
+2021-07-24 18:17:59 [kafka-coordinator-heartbeat-thread | kafka-streams-application] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition twitter-topic-0
+2021-07-24 18:17:59 [kafka-coordinator-heartbeat-thread | kafka-streams-application] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition twitter-topic-1
+2021-07-24 18:17:59 [kafka-coordinator-heartbeat-thread | kafka-streams-application] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition twitter-topic-2
+2021-07-24 18:17:59 [kafka-coordinator-heartbeat-thread | kafka-streams-application] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition kafka-streams-application-word-count-store-repartition-0
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.RecordCollectorImpl - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_0] Closing record collector dirty
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_0] Closed dirty
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition kafka-streams-application-word-count-store-repartition-0
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] No custom setting defined for topic 'kafka-streams-application-word-count-store-repartition' using original config 'earliest' for offset reset
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Seeking to EARLIEST offset of partition kafka-streams-application-word-count-store-repartition-0
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.s.i.RocksDBTimestampedStore - Opening store word-count-store in regular mode
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.ProcessorStateManager - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_0] State store word-count-store did not find checkpoint offset, hence would default to the starting offset at changelog kafka-streams-application-word-count-store-changelog-0
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_0] Initialized
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Subscribed to partition(s): kafka-streams-application-word-count-store-changelog-2, kafka-streams-application-word-count-store-changelog-1, kafka-streams-application-word-count-store-changelog-0
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Seeking to EARLIEST offset of partition kafka-streams-application-word-count-store-changelog-0
+2021-07-24 18:17:59 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-restore-consumer, groupId=null] Resetting offset for partition kafka-streams-application-word-count-store-changelog-0 to offset 0.
+2021-07-24 18:17:59 [kafka-coordinator-heartbeat-thread | kafka-streams-application] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition twitter-topic-0
+2021-07-24 18:17:59 [kafka-coordinator-heartbeat-thread | kafka-streams-application] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition twitter-topic-1
+2021-07-24 18:17:59 [kafka-coordinator-heartbeat-thread | kafka-streams-application] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition twitter-topic-2
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.StoreChangelogReader - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] Finished restoring changelog kafka-streams-application-word-count-store-changelog-2 to store word-count-store with a total number of 0 records
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.StoreChangelogReader - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] Finished restoring changelog kafka-streams-application-word-count-store-changelog-1 to store word-count-store with a total number of 0 records
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.i.StoreChangelogReader - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] Finished restoring changelog kafka-streams-application-word-count-store-changelog-0 to store word-count-store with a total number of 0 records
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Resetting offset for partition kafka-streams-application-word-count-store-repartition-1 to offset 0.
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Resetting offset for partition twitter-topic-2 to offset 0.
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition kafka-streams-application-word-count-store-repartition-0
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_0] Restored and ready to run
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition kafka-streams-application-word-count-store-repartition-1
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_1] Restored and ready to run
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Found no committed offset for partition kafka-streams-application-word-count-store-repartition-2
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] task [1_2] Restored and ready to run
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8] State transition from REBALANCING to RUNNING
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Resetting offset for partition twitter-topic-0 to offset 0.
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Resetting offset for partition kafka-streams-application-word-count-store-repartition-2 to offset 0.
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Resetting offset for partition twitter-topic-1 to offset 0.
+2021-07-24 18:18:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1-consumer, groupId=kafka-streams-application] Resetting offset for partition kafka-streams-application-word-count-store-repartition-0 to offset 0.
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - consectetuer, count - 146
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ultricies, count - 136
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - spring, count - 73
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lorem, count - 129
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - porttitor, count - 128
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - massa, count - 137
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - purus, count - 150
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - pulvinar, count - 128
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sit, count - 144
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - congue, count - 142
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elasticsearch, count - 62
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - magna, count - 130
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - adipiscing, count - 144
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sed, count - 122
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lectus, count - 136
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - kafka, count - 49
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - malesuada, count - 139
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - posuere, count - 128
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - dolor, count - 138
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - amet, count - 105
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elit, count - 125
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - microservices, count - 48
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ipsum, count - 141
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - libero, count - 128
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - java, count - 56
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - maecenas, count - 125
+2021-07-24 18:18:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - fusce, count - 126
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - porttitor, count - 129
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lorem, count - 130
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - congue, count - 143
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - purus, count - 152
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sit, count - 146
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - spring, count - 74
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - consectetuer, count - 147
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - massa, count - 141
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ultricies, count - 138
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - malesuada, count - 140
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - adipiscing, count - 145
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sed, count - 124
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - kafka, count - 50
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - magna, count - 131
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - posuere, count - 131
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - maecenas, count - 126
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - java, count - 57
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - libero, count - 130
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - amet, count - 107
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ipsum, count - 142
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - dolor, count - 139
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elit, count - 127
+2021-07-24 18:19:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - fusce, count - 127
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - purus, count - 153
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sit, count - 147
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - consectetuer, count - 148
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - pulvinar, count - 131
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ultricies, count - 139
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - massa, count - 143
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - spring, count - 75
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - congue, count - 145
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - adipiscing, count - 146
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - kafka, count - 51
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sed, count - 125
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lectus, count - 139
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - posuere, count - 133
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - fusce, count - 128
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - microservices, count - 49
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ipsum, count - 144
+2021-07-24 18:19:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - libero, count - 133
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - spring, count - 76
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lorem, count - 131
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - porttitor, count - 130
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - massa, count - 145
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - consectetuer, count - 149
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - pulvinar, count - 134
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sit, count - 148
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sed, count - 126
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - magna, count - 133
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - malesuada, count - 142
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lectus, count - 140
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - adipiscing, count - 147
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elasticsearch, count - 64
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - dolor, count - 140
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - maecenas, count - 127
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elit, count - 128
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ipsum, count - 146
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - fusce, count - 129
+2021-07-24 18:20:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - amet, count - 109
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - massa, count - 146
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lorem, count - 132
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - pulvinar, count - 136
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - purus, count - 155
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ultricies, count - 141
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sit, count - 152
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - porttitor, count - 131
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - congue, count - 149
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - adipiscing, count - 149
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - magna, count - 134
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elasticsearch, count - 66
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lectus, count - 141
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sed, count - 128
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - microservices, count - 50
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - amet, count - 110
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - libero, count - 135
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - dolor, count - 141
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elit, count - 132
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - fusce, count - 130
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - maecenas, count - 128
+2021-07-24 18:20:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ipsum, count - 148
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - spring, count - 77
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - porttitor, count - 132
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - purus, count - 157
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - congue, count - 150
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lorem, count - 136
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sit, count - 156
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - consectetuer, count - 153
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lectus, count - 142
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - posuere, count - 135
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - adipiscing, count - 151
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elit, count - 133
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - fusce, count - 131
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - libero, count - 136
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - amet, count - 111
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - java, count - 59
+2021-07-24 18:21:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - maecenas, count - 129
+2021-07-24 18:21:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lorem, count - 139
+2021-07-24 18:21:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - spring, count - 79
+2021-07-24 18:21:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - porttitor, count - 136
+2021-07-24 18:21:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sit, count - 158
+2021-07-24 18:21:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - congue, count - 151
+2021-07-24 18:21:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - purus, count - 159
+2021-07-24 18:21:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - consectetuer, count - 154
+2021-07-24 18:21:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - malesuada, count - 143
+2021-07-24 18:21:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lectus, count - 144
+2021-07-24 18:21:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - magna, count - 137
+2021-07-24 18:21:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - adipiscing, count - 153
+2021-07-24 18:21:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sed, count - 132
+2021-07-24 18:21:31 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elit, count - 134
+2021-07-24 18:21:31 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - dolor, count - 142
+2021-07-24 18:21:31 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - maecenas, count - 131
+2021-07-24 18:21:31 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - libero, count - 137
+2021-07-24 18:21:31 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - microservices, count - 51
+2021-07-24 18:21:31 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ipsum, count - 150
+2021-07-24 18:21:31 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - amet, count - 114
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - massa, count - 147
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - purus, count - 161
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ultricies, count - 142
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - pulvinar, count - 138
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lorem, count - 140
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - magna, count - 138
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - posuere, count - 137
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elasticsearch, count - 68
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lectus, count - 147
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - adipiscing, count - 154
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - fusce, count - 132
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - maecenas, count - 132
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - libero, count - 138
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ipsum, count - 151
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elit, count - 135
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - java, count - 60
+2021-07-24 18:22:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - amet, count - 115
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - congue, count - 152
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sit, count - 159
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - consectetuer, count - 158
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ultricies, count - 146
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - purus, count - 163
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - porttitor, count - 140
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - spring, count - 80
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - massa, count - 152
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lectus, count - 148
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - adipiscing, count - 155
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - posuere, count - 138
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elasticsearch, count - 70
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - malesuada, count - 146
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - magna, count - 141
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sed, count - 133
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ipsum, count - 152
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elit, count - 137
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - maecenas, count - 133
+2021-07-24 18:22:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - libero, count - 140
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sit, count - 160
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - massa, count - 153
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - porttitor, count - 141
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - pulvinar, count - 139
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - purus, count - 164
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lorem, count - 142
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - congue, count - 155
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - consectetuer, count - 159
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - magna, count - 142
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - kafka, count - 52
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - posuere, count - 139
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sed, count - 134
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elasticsearch, count - 72
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lectus, count - 152
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - malesuada, count - 148
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - maecenas, count - 134
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - amet, count - 116
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elit, count - 138
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - fusce, count - 134
+2021-07-24 18:23:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - libero, count - 141
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - consectetuer, count - 160
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sit, count - 161
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - pulvinar, count - 140
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - porttitor, count - 143
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - congue, count - 160
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - massa, count - 156
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - adipiscing, count - 156
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - posuere, count - 142
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lectus, count - 154
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - magna, count - 143
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - kafka, count - 54
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - maecenas, count - 135
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - java, count - 61
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elit, count - 140
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ipsum, count - 155
+2021-07-24 18:23:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - dolor, count - 147
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - congue, count - 162
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - purus, count - 165
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sit, count - 164
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - massa, count - 158
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - pulvinar, count - 143
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - porttitor, count - 145
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - magna, count - 145
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sed, count - 136
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - posuere, count - 143
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - adipiscing, count - 158
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - libero, count - 142
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - java, count - 62
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - dolor, count - 148
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ipsum, count - 157
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - microservices, count - 53
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - amet, count - 121
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - maecenas, count - 137
+2021-07-24 18:24:00 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elit, count - 142
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - consectetuer, count - 161
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - massa, count - 161
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - pulvinar, count - 145
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - porttitor, count - 147
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lorem, count - 145
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - ultricies, count - 148
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - kafka, count - 55
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - sed, count - 137
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - adipiscing, count - 160
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - magna, count - 147
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - elasticsearch, count - 73
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - malesuada, count - 151
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - lectus, count - 156
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - posuere, count - 147
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - amet, count - 123
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - maecenas, count - 138
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - java, count - 63
+2021-07-24 18:24:30 [kafka-streams-application-97fb1ccf-b3d3-416a-bb58-a783c9c344f8-StreamThread-1] INFO  c.h.m.k.s.s.r.i.KafkaStreamsRunner - Sending to topic - twitter-analytics-topic, word - fusce, count - 138

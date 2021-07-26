@@ -1,4 +1,4 @@
-package com.hayba.microservices.kafka.consumer;
+package com.hayba.microservices.kafka.consumer.config;
 
 import com.hayba.microservices.config.KafkaConfigData;
 import com.hayba.microservices.config.KafkaConsumerConfigData;

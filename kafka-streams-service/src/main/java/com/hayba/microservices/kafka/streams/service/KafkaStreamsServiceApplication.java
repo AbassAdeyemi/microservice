@@ -10,8 +10,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 
+@EnableDiscoveryClient
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.hayba"})
+@ComponentScan(basePackages = {"com.hayba.microservices"})
 public class KafkaStreamsServiceApplication implements CommandLineRunner {
 
 	private static final Logger LOG = LoggerFactory.getLogger(KafkaStreamsServiceApplication.class);

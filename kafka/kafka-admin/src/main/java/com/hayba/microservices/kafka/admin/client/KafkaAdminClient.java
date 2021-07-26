@@ -128,12 +128,8 @@ public class KafkaAdminClient {
     }
 
     private CreateTopicsResult doCreateTopics(RetryContext retryContext) {
-    	  System.out.println("I got here");
-    	LOG.info("bootstrap servers {}", kafkaConfigData.getBootstrapServers());
         List<String> topicNames = kafkaConfigData.getTopicNamesToCreate();
-      
-     //   LOG.info("Retry context: {}", topicNames.get(0));
-      // LOG.info("Creating {} topics(s), attempt {}", topicNames.size(), retryContext.getRetryCount());
+       LOG.info("Creating {} topics(s), attempt {}", topicNames.size(), retryContext.getRetryCount());
         List<NewTopic> kafkaTopics = topicNames.stream().map(topic -> new NewTopic(
                 topic.trim(),
                 kafkaConfigData.getNumOfPartitions(),

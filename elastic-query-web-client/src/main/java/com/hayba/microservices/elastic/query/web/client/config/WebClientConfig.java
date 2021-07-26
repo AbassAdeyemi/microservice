@@ -25,7 +25,6 @@ import java.util.concurrent.TimeUnit;
 
 @Slf4j
 @Configuration
-@LoadBalancerClient(name = "elastic-query-service", configuration = ElasticQueryServiceInstanceListSupplier.class)
 public class WebClientConfig {
     private final ElasticQueryWebClientConfig.WebClient webClientConfigData;
     private final UserConfigData userConfigData;
@@ -49,7 +48,6 @@ public class WebClientConfig {
         oAuth2Filter.setDefaultOAuth2AuthorizedClient(true);
         oAuth2Filter.setDefaultClientRegistrationId(defaultClientRegistrationId);
 
-        log.info("Base url: {}", webClientConfigData.getBaseUrl());
         return WebClient.builder()
                 .baseUrl(webClientConfigData.getBaseUrl())
                 .defaultHeader(HttpHeaders.CONTENT_TYPE, webClientConfigData.getContentType())

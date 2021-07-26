@@ -2,14 +2,13 @@ package com.hayba.microservices.query.service.security;
 
 import lombok.Builder;
 import lombok.Getter;
-import org.apache.tomcat.util.bcel.Const;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.Map;
 
-import static com.hayba.microservices.query.service.security.Constants.*;
+import static com.hayba.microservices.query.service.Constants.*;
 
 @Builder
 @Getter

@@ -12,7 +12,7 @@ import org.springframework.security.oauth2.jwt.Jwt;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static com.hayba.microservices.query.service.security.Constants.NA;
+import static com.hayba.microservices.query.service.Constants.NA;
 
 @RequiredArgsConstructor
 public class TwitterQueryUserJwtConverter implements Converter<Jwt, AbstractAuthenticationToken> {

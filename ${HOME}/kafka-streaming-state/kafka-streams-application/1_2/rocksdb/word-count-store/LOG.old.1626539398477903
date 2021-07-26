@@ -1,0 +1,184 @@
+2021/07/17-17:29:58.453031 17a4 RocksDB version: 5.18.4
+2021/07/17-17:29:58.453131 17a4 Git sha rocksdb_build_git_sha:@b9a4a10659969c71e6f6eab4e4bae8c36ede919f@
+2021/07/17-17:29:58.453153 17a4 Compile date Mar 11 2020
+2021/07/17-17:29:58.453167 17a4 DB SUMMARY
+2021/07/17-17:29:58.453272 17a4 SST files in C:\Users\abass\Documents\playground\microservice\${HOME}\kafka-streaming-state\kafka-streams-application\1_2\rocksdb\word-count-store dir, Total Num: 0, files: 
+2021/07/17-17:29:58.453290 17a4 Write Ahead Log file in C:\Users\abass\Documents\playground\microservice\${HOME}\kafka-streaming-state\kafka-streams-application\1_2\rocksdb\word-count-store: 
+2021/07/17-17:29:58.453303 17a4                         Options.error_if_exists: 0
+2021/07/17-17:29:58.453315 17a4                       Options.create_if_missing: 1
+2021/07/17-17:29:58.453468 17a4                         Options.paranoid_checks: 1
+2021/07/17-17:29:58.453476 17a4                                     Options.env: 0000015823810870
+2021/07/17-17:29:58.453480 17a4                                Options.info_log: 000001587F48F970
+2021/07/17-17:29:58.453484 17a4                Options.max_file_opening_threads: 16
+2021/07/17-17:29:58.453488 17a4                              Options.statistics: 0000000000000000
+2021/07/17-17:29:58.453491 17a4                               Options.use_fsync: 0
+2021/07/17-17:29:58.453495 17a4                       Options.max_log_file_size: 0
+2021/07/17-17:29:58.453499 17a4                  Options.max_manifest_file_size: 1073741824
+2021/07/17-17:29:58.453503 17a4                   Options.log_file_time_to_roll: 0
+2021/07/17-17:29:58.453506 17a4                       Options.keep_log_file_num: 1000
+2021/07/17-17:29:58.453510 17a4                    Options.recycle_log_file_num: 0
+2021/07/17-17:29:58.453514 17a4                         Options.allow_fallocate: 1
+2021/07/17-17:29:58.453518 17a4                        Options.allow_mmap_reads: 0
+2021/07/17-17:29:58.453521 17a4                       Options.allow_mmap_writes: 0
+2021/07/17-17:29:58.453525 17a4                        Options.use_direct_reads: 0
+2021/07/17-17:29:58.453529 17a4                        Options.use_direct_io_for_flush_and_compaction: 0
+2021/07/17-17:29:58.453533 17a4          Options.create_missing_column_families: 0
+2021/07/17-17:29:58.453536 17a4                              Options.db_log_dir: 
+2021/07/17-17:29:58.453540 17a4                                 Options.wal_dir: C:\Users\abass\Documents\playground\microservice\${HOME}\kafka-streaming-state\kafka-streams-application\1_2\rocksdb\word-count-store
+2021/07/17-17:29:58.453544 17a4                Options.table_cache_numshardbits: 6
+2021/07/17-17:29:58.453548 17a4                      Options.max_subcompactions: 1
+2021/07/17-17:29:58.453551 17a4                  Options.max_background_flushes: -1
+2021/07/17-17:29:58.453555 17a4                         Options.WAL_ttl_seconds: 0
+2021/07/17-17:29:58.453559 17a4                       Options.WAL_size_limit_MB: 0
+2021/07/17-17:29:58.453563 17a4             Options.manifest_preallocation_size: 4194304
+2021/07/17-17:29:58.453566 17a4                     Options.is_fd_close_on_exec: 1
+2021/07/17-17:29:58.453570 17a4                   Options.advise_random_on_open: 1
+2021/07/17-17:29:58.453574 17a4                    Options.db_write_buffer_size: 0
+2021/07/17-17:29:58.453577 17a4                    Options.write_buffer_manager: 0000015822172AF0
+2021/07/17-17:29:58.453581 17a4         Options.access_hint_on_compaction_start: 1
+2021/07/17-17:29:58.453585 17a4  Options.new_table_reader_for_compaction_inputs: 0
+2021/07/17-17:29:58.453589 17a4           Options.random_access_max_buffer_size: 1048576
+2021/07/17-17:29:58.453592 17a4                      Options.use_adaptive_mutex: 0
+2021/07/17-17:29:58.453596 17a4                            Options.rate_limiter: 0000000000000000
+2021/07/17-17:29:58.453600 17a4     Options.sst_file_manager.rate_bytes_per_sec: 0
+2021/07/17-17:29:58.453604 17a4                       Options.wal_recovery_mode: 2
+2021/07/17-17:29:58.453608 17a4                  Options.enable_thread_tracking: 0
+2021/07/17-17:29:58.453644 17a4                  Options.enable_pipelined_write: 0
+2021/07/17-17:29:58.453650 17a4         Options.allow_concurrent_memtable_write: 1
+2021/07/17-17:29:58.453654 17a4      Options.enable_write_thread_adaptive_yield: 1
+2021/07/17-17:29:58.453658 17a4             Options.write_thread_max_yield_usec: 100
+2021/07/17-17:29:58.453662 17a4            Options.write_thread_slow_yield_usec: 3
+2021/07/17-17:29:58.453666 17a4                               Options.row_cache: None
+2021/07/17-17:29:58.453669 17a4                              Options.wal_filter: None
+2021/07/17-17:29:58.453673 17a4             Options.avoid_flush_during_recovery: 0
+2021/07/17-17:29:58.453677 17a4             Options.allow_ingest_behind: 0
+2021/07/17-17:29:58.453680 17a4             Options.preserve_deletes: 0
+2021/07/17-17:29:58.453684 17a4             Options.two_write_queues: 0
+2021/07/17-17:29:58.453688 17a4             Options.manual_wal_flush: 0
+2021/07/17-17:29:58.453691 17a4             Options.max_background_jobs: 8
+2021/07/17-17:29:58.453695 17a4             Options.max_background_compactions: -1
+2021/07/17-17:29:58.453699 17a4             Options.avoid_flush_during_shutdown: 0
+2021/07/17-17:29:58.453703 17a4           Options.writable_file_max_buffer_size: 1048576
+2021/07/17-17:29:58.453706 17a4             Options.delayed_write_rate : 16777216
+2021/07/17-17:29:58.453710 17a4             Options.max_total_wal_size: 0
+2021/07/17-17:29:58.453714 17a4             Options.delete_obsolete_files_period_micros: 21600000000
+2021/07/17-17:29:58.453717 17a4                   Options.stats_dump_period_sec: 600
+2021/07/17-17:29:58.453721 17a4                          Options.max_open_files: -1
+2021/07/17-17:29:58.453725 17a4                          Options.bytes_per_sync: 0
+2021/07/17-17:29:58.453729 17a4                      Options.wal_bytes_per_sync: 0
+2021/07/17-17:29:58.453732 17a4       Options.compaction_readahead_size: 0
+2021/07/17-17:29:58.453736 17a4 Compression algorithms supported:
+2021/07/17-17:29:58.453741 17a4 	kZSTD supported: 1
+2021/07/17-17:29:58.453745 17a4 	kSnappyCompression supported: 1
+2021/07/17-17:29:58.453749 17a4 	kBZip2Compression supported: 0
+2021/07/17-17:29:58.453753 17a4 	kZlibCompression supported: 1
+2021/07/17-17:29:58.453757 17a4 	kLZ4Compression supported: 1
+2021/07/17-17:29:58.453761 17a4 	kXpressCompression supported: 0
+2021/07/17-17:29:58.453764 17a4 	kLZ4HCCompression supported: 1
+2021/07/17-17:29:58.453768 17a4 	kZSTDNotFinalCompression supported: 1
+2021/07/17-17:29:58.453777 17a4 Fast CRC32 supported: Supported on x86
+2021/07/17-17:29:58.470549 17a4               Options.comparator: leveldb.BytewiseComparator
+2021/07/17-17:29:58.470583 17a4           Options.merge_operator: None
+2021/07/17-17:29:58.470595 17a4        Options.compaction_filter: None
+2021/07/17-17:29:58.470606 17a4        Options.compaction_filter_factory: None
+2021/07/17-17:29:58.470617 17a4         Options.memtable_factory: SkipListFactory
+2021/07/17-17:29:58.470627 17a4            Options.table_factory: BlockBasedTable
+2021/07/17-17:29:58.470686 17a4            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000015821254080)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 00000158255DB7B0
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 52428800
+    num_shard_bits : 6
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: rocksdb.BuiltinBloomFilter
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 0
+  enable_index_compression: 1
+  block_align: 0
+2021/07/17-17:29:58.470827 17a4        Options.write_buffer_size: 16777216
+2021/07/17-17:29:58.470847 17a4  Options.max_write_buffer_number: 3
+2021/07/17-17:29:58.470859 17a4          Options.compression: NoCompression
+2021/07/17-17:29:58.470869 17a4                  Options.bottommost_compression: Disabled
+2021/07/17-17:29:58.470880 17a4       Options.prefix_extractor: nullptr
+2021/07/17-17:29:58.470890 17a4   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2021/07/17-17:29:58.470900 17a4             Options.num_levels: 7
+2021/07/17-17:29:58.470911 17a4        Options.min_write_buffer_number_to_merge: 1
+2021/07/17-17:29:58.470921 17a4     Options.max_write_buffer_number_to_maintain: 0
+2021/07/17-17:29:58.470931 17a4            Options.bottommost_compression_opts.window_bits: -14
+2021/07/17-17:29:58.470942 17a4                  Options.bottommost_compression_opts.level: 32767
+2021/07/17-17:29:58.470953 17a4               Options.bottommost_compression_opts.strategy: 0
+2021/07/17-17:29:58.470963 17a4         Options.bottommost_compression_opts.max_dict_bytes: 0
+2021/07/17-17:29:58.470974 17a4         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2021/07/17-17:29:58.470984 17a4                  Options.bottommost_compression_opts.enabled: false
+2021/07/17-17:29:58.470995 17a4            Options.compression_opts.window_bits: -14
+2021/07/17-17:29:58.471005 17a4                  Options.compression_opts.level: 32767
+2021/07/17-17:29:58.471016 17a4               Options.compression_opts.strategy: 0
+2021/07/17-17:29:58.471026 17a4         Options.compression_opts.max_dict_bytes: 0
+2021/07/17-17:29:58.471036 17a4         Options.compression_opts.zstd_max_train_bytes: 0
+2021/07/17-17:29:58.471047 17a4                  Options.compression_opts.enabled: false
+2021/07/17-17:29:58.471057 17a4      Options.level0_file_num_compaction_trigger: 4
+2021/07/17-17:29:58.471067 17a4          Options.level0_slowdown_writes_trigger: 20
+2021/07/17-17:29:58.471078 17a4              Options.level0_stop_writes_trigger: 36
+2021/07/17-17:29:58.471088 17a4                   Options.target_file_size_base: 67108864
+2021/07/17-17:29:58.471098 17a4             Options.target_file_size_multiplier: 1
+2021/07/17-17:29:58.471108 17a4                Options.max_bytes_for_level_base: 268435456
+2021/07/17-17:29:58.471119 17a4 Options.level_compaction_dynamic_level_bytes: 0
+2021/07/17-17:29:58.471129 17a4          Options.max_bytes_for_level_multiplier: 10.000000
+2021/07/17-17:29:58.471143 17a4 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2021/07/17-17:29:58.471154 17a4 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2021/07/17-17:29:58.471164 17a4 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2021/07/17-17:29:58.471175 17a4 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2021/07/17-17:29:58.471185 17a4 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2021/07/17-17:29:58.471196 17a4 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2021/07/17-17:29:58.471206 17a4 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2021/07/17-17:29:58.471217 17a4       Options.max_sequential_skip_in_iterations: 8
+2021/07/17-17:29:58.471227 17a4                    Options.max_compaction_bytes: 1677721600
+2021/07/17-17:29:58.471237 17a4                        Options.arena_block_size: 2097152
+2021/07/17-17:29:58.471247 17a4   Options.soft_pending_compaction_bytes_limit: 68719476736
+2021/07/17-17:29:58.471258 17a4   Options.hard_pending_compaction_bytes_limit: 274877906944
+2021/07/17-17:29:58.471268 17a4       Options.rate_limit_delay_max_milliseconds: 100
+2021/07/17-17:29:58.471279 17a4                Options.disable_auto_compactions: 0
+2021/07/17-17:29:58.471291 17a4                        Options.compaction_style: kCompactionStyleUniversal
+2021/07/17-17:29:58.471303 17a4                          Options.compaction_pri: kByCompensatedSize
+2021/07/17-17:29:58.471314 17a4 Options.compaction_options_universal.size_ratio: 1
+2021/07/17-17:29:58.471324 17a4 Options.compaction_options_universal.min_merge_width: 2
+2021/07/17-17:29:58.471339 17a4 Options.compaction_options_universal.max_merge_width: 4294967295
+2021/07/17-17:29:58.471352 17a4 Options.compaction_options_universal.max_size_amplification_percent: 200
+2021/07/17-17:29:58.471363 17a4 Options.compaction_options_universal.compression_size_percent: -1
+2021/07/17-17:29:58.471375 17a4 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2021/07/17-17:29:58.471386 17a4 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2021/07/17-17:29:58.471397 17a4 Options.compaction_options_fifo.allow_compaction: 0
+2021/07/17-17:29:58.471409 17a4 Options.compaction_options_fifo.ttl: 0
+2021/07/17-17:29:58.471425 17a4                   Options.table_properties_collectors: 
+2021/07/17-17:29:58.471461 17a4                   Options.inplace_update_support: 0
+2021/07/17-17:29:58.471479 17a4                 Options.inplace_update_num_locks: 10000
+2021/07/17-17:29:58.471493 17a4               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2021/07/17-17:29:58.471510 17a4   Options.memtable_huge_page_size: 0
+2021/07/17-17:29:58.471526 17a4                           Options.bloom_locality: 0
+2021/07/17-17:29:58.471541 17a4                    Options.max_successive_merges: 0
+2021/07/17-17:29:58.471556 17a4                Options.optimize_filters_for_hits: 0
+2021/07/17-17:29:58.471572 17a4                Options.paranoid_file_checks: 0
+2021/07/17-17:29:58.471589 17a4                Options.force_consistency_checks: 0
+2021/07/17-17:29:58.471606 17a4                Options.report_bg_io_stats: 0
+2021/07/17-17:29:58.471622 17a4                               Options.ttl: 0

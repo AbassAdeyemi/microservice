@@ -2,6 +2,7 @@ package com.hayba.microservices.query.service.security;
 
 import com.hayba.microservices.elastic.query.service.common.model.ElasticQueryServiceRequestModel;
 import com.hayba.microservices.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
+import com.hayba.microservices.query.service.model.ElasticQueryServiceAnalyticsResponseModel;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.PermissionEvaluator;
@@ -32,10 +33,10 @@ public class QueryServicePermissionEvaluator implements PermissionEvaluator {
             if(targetDomain == null) {
                 return true;
             }
-            List<ElasticQueryServiceResponseModel> responseBody =
-                    ((ResponseEntity<List<ElasticQueryServiceResponseModel>>)targetDomain).getBody();
+            ElasticQueryServiceAnalyticsResponseModel responseBody =
+                    ((ResponseEntity<ElasticQueryServiceAnalyticsResponseModel >)targetDomain).getBody();
             Objects.requireNonNull(responseBody);
-            return postAuthorize(authentication, responseBody, permission);
+            return postAuthorize(authentication, responseBody.getQueryServiceResponseModels(), permission);
         }
 
         return false;
